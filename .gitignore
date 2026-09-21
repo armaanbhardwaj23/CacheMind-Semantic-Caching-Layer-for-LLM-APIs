@@ -1,0 +1,17 @@
+.env
+.venv/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+.cache/
+.DS_Store
+*.egg-info/
+# Curated experiment reports under evals/results/ ARE committed: the README's
+# numbers must be reproducible from files a reader can open.
+
+# External dataset samples and caches (re-fetchable / reproducible)
+data/external/
+
+# Generated evaluation inputs (PAWS/QQP pairs and QQP intents), rebuilt from the public samples by
+# scripts/fetch_hf_rows.py + import_paws_wiki.py / import_quora_qqp.py. QQP's licence is unclear, so its text is never committed.
+evals/external/
