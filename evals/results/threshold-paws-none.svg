@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" font-family="sans-serif" font-size="12">
+<rect width="640" height="380" fill="white"/>
+<text x="56" y="24" font-size="14" font-weight="bold">Threshold trade-off: paws_wiki_300.proxy</text>
+<line x1="56" x2="510" y1="332.0" y2="332.0" stroke="#e3e3e3"/>
+<text x="48" y="336.0" text-anchor="end" fill="#555">0%</text>
+<line x1="56" x2="510" y1="260.0" y2="260.0" stroke="#e3e3e3"/>
+<text x="48" y="264.0" text-anchor="end" fill="#555">25%</text>
+<line x1="56" x2="510" y1="188.0" y2="188.0" stroke="#e3e3e3"/>
+<text x="48" y="192.0" text-anchor="end" fill="#555">50%</text>
+<line x1="56" x2="510" y1="116.0" y2="116.0" stroke="#e3e3e3"/>
+<text x="48" y="120.0" text-anchor="end" fill="#555">75%</text>
+<line x1="56" x2="510" y1="44.0" y2="44.0" stroke="#e3e3e3"/>
+<text x="48" y="48.0" text-anchor="end" fill="#555">100%</text>
+<text x="56.0" y="350" text-anchor="middle" fill="#555">0.70</text>
+<text x="207.3" y="350" text-anchor="middle" fill="#555">0.80</text>
+<text x="283.0" y="350" text-anchor="middle" fill="#555">0.85</text>
+<text x="328.4" y="350" text-anchor="middle" fill="#555">0.88</text>
+<text x="358.7" y="350" text-anchor="middle" fill="#555">0.90</text>
+<text x="388.9" y="350" text-anchor="middle" fill="#555">0.92</text>
+<text x="419.2" y="350" text-anchor="middle" fill="#555">0.94</text>
+<text x="434.3" y="350" text-anchor="middle" fill="#555">0.95</text>
+<text x="449.5" y="350" text-anchor="middle" fill="#555">0.96</text>
+<text x="479.7" y="350" text-anchor="middle" fill="#555">0.98</text>
+<text x="510.0" y="350" text-anchor="middle" fill="#555">1.00</text>
+<text x="283.0" y="372" text-anchor="middle" fill="#555">similarity threshold</text>
+<polyline points="56.0,44.0 207.3,47.8 283.0,49.8 328.4,54.6 358.7,65.1 388.9,81.4 419.2,115.0 434.3,137.1 449.5,168.8 479.7,233.1 510.0,332.0" fill="none" stroke="#2a6fdb" stroke-width="2.5"/>
+<circle cx="56.0" cy="44.0" r="3.5" fill="#2a6fdb"/>
+<circle cx="207.3" cy="47.8" r="3.5" fill="#2a6fdb"/>
+<circle cx="283.0" cy="49.8" r="3.5" fill="#2a6fdb"/>
+<circle cx="328.4" cy="54.6" r="3.5" fill="#2a6fdb"/>
+<circle cx="358.7" cy="65.1" r="3.5" fill="#2a6fdb"/>
+<circle cx="388.9" cy="81.4" r="3.5" fill="#2a6fdb"/>
+<circle cx="419.2" cy="115.0" r="3.5" fill="#2a6fdb"/>
+<circle cx="434.3" cy="137.1" r="3.5" fill="#2a6fdb"/>
+<circle cx="449.5" cy="168.8" r="3.5" fill="#2a6fdb"/>
+<circle cx="479.7" cy="233.1" r="3.5" fill="#2a6fdb"/>
+<circle cx="510.0" cy="332.0" r="3.5" fill="#2a6fdb"/>
+<text x="518.0" y="336.0" fill="#2a6fdb">Hit rate</text>
+<polyline points="56.0,188.0 207.3,188.0 283.0,188.0 328.4,187.5 358.7,182.8 388.9,183.0 419.2,175.3 434.3,170.3 449.5,157.5 479.7,125.1" fill="none" stroke="#1a9850" stroke-width="2.5"/>
+<circle cx="56.0" cy="188.0" r="3.5" fill="#1a9850"/>
+<circle cx="207.3" cy="188.0" r="3.5" fill="#1a9850"/>
+<circle cx="283.0" cy="188.0" r="3.5" fill="#1a9850"/>
+<circle cx="328.4" cy="187.5" r="3.5" fill="#1a9850"/>
+<circle cx="358.7" cy="182.8" r="3.5" fill="#1a9850"/>
+<circle cx="388.9" cy="183.0" r="3.5" fill="#1a9850"/>
+<circle cx="419.2" cy="175.3" r="3.5" fill="#1a9850"/>
+<circle cx="434.3" cy="170.3" r="3.5" fill="#1a9850"/>
+<circle cx="449.5" cy="157.5" r="3.5" fill="#1a9850"/>
+<circle cx="479.7" cy="125.1" r="3.5" fill="#1a9850"/>
+<text x="487.7" y="129.1" fill="#1a9850">Precision</text>
+<polyline points="56.0,44.0 207.3,47.8 283.0,49.8 328.4,53.6 358.7,55.5 388.9,72.8 419.2,95.8 434.3,113.1 449.5,134.2 479.7,189.9 510.0,332.0" fill="none" stroke="#d9822b" stroke-width="2.5"/>
+<circle cx="56.0" cy="44.0" r="3.5" fill="#d9822b"/>
+<circle cx="207.3" cy="47.8" r="3.5" fill="#d9822b"/>
+<circle cx="283.0" cy="49.8" r="3.5" fill="#d9822b"/>
+<circle cx="328.4" cy="53.6" r="3.5" fill="#d9822b"/>
+<circle cx="358.7" cy="55.5" r="3.5" fill="#d9822b"/>
+<circle cx="388.9" cy="72.8" r="3.5" fill="#d9822b"/>
+<circle cx="419.2" cy="95.8" r="3.5" fill="#d9822b"/>
+<circle cx="434.3" cy="113.1" r="3.5" fill="#d9822b"/>
+<circle cx="449.5" cy="134.2" r="3.5" fill="#d9822b"/>
+<circle cx="479.7" cy="189.9" r="3.5" fill="#d9822b"/>
+<circle cx="510.0" cy="332.0" r="3.5" fill="#d9822b"/>
+<text x="518.0" y="336.0" fill="#d9822b">Valid-reuse recall</text>
+</svg>

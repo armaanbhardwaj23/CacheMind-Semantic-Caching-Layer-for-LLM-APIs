@@ -1,0 +1,1990 @@
+{
+  "dataset": "evals/external/paws_wiki_300.proxy.json",
+  "embedding_model": "openai/text-embedding-3-small",
+  "cases": 300,
+  "acceptable_reuse_cases": 150,
+  "verification": "none",
+  "embedding_calls_made": 595,
+  "embedding_calls_served_from_disk_cache": 595,
+  "ledger_total_usd_after_run": 0.000391,
+  "max_false_hit_rate_budget": 0.05,
+  "selected_threshold": null,
+  "scored_cases": [
+    {
+      "case_id": "paws-wiki-hit-001",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9608133435249329
+    },
+    {
+      "case_id": "paws-wiki-hit-002",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9475367069244385
+    },
+    {
+      "case_id": "paws-wiki-hit-003",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9831686615943909
+    },
+    {
+      "case_id": "paws-wiki-hit-004",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.7527339458465576
+    },
+    {
+      "case_id": "paws-wiki-hit-005",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9875574707984924
+    },
+    {
+      "case_id": "paws-wiki-hit-006",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9478257894515991
+    },
+    {
+      "case_id": "paws-wiki-hit-007",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9982834458351135
+    },
+    {
+      "case_id": "paws-wiki-hit-008",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9065241813659668
+    },
+    {
+      "case_id": "paws-wiki-hit-009",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.97906893491745
+    },
+    {
+      "case_id": "paws-wiki-hit-010",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9855231046676636
+    },
+    {
+      "case_id": "paws-wiki-hit-011",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9873673915863037
+    },
+    {
+      "case_id": "paws-wiki-hit-012",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9284982681274414
+    },
+    {
+      "case_id": "paws-wiki-hit-013",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9833266735076904
+    },
+    {
+      "case_id": "paws-wiki-hit-014",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9679111838340759
+    },
+    {
+      "case_id": "paws-wiki-hit-015",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9880578517913818
+    },
+    {
+      "case_id": "paws-wiki-hit-016",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9898398518562317
+    },
+    {
+      "case_id": "paws-wiki-hit-017",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9878564476966858
+    },
+    {
+      "case_id": "paws-wiki-hit-018",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.987781286239624
+    },
+    {
+      "case_id": "paws-wiki-hit-019",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9345152974128723
+    },
+    {
+      "case_id": "paws-wiki-hit-020",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9422835111618042
+    },
+    {
+      "case_id": "paws-wiki-hit-021",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9909645318984985
+    },
+    {
+      "case_id": "paws-wiki-hit-022",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9646380543708801
+    },
+    {
+      "case_id": "paws-wiki-hit-023",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9888023734092712
+    },
+    {
+      "case_id": "paws-wiki-hit-024",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9982851147651672
+    },
+    {
+      "case_id": "paws-wiki-hit-025",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9734504222869873
+    },
+    {
+      "case_id": "paws-wiki-hit-026",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9806632399559021
+    },
+    {
+      "case_id": "paws-wiki-hit-027",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9945468306541443
+    },
+    {
+      "case_id": "paws-wiki-hit-028",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9920234680175781
+    },
+    {
+      "case_id": "paws-wiki-hit-029",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9464352130889893
+    },
+    {
+      "case_id": "paws-wiki-hit-030",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.981454074382782
+    },
+    {
+      "case_id": "paws-wiki-hit-031",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9910640716552734
+    },
+    {
+      "case_id": "paws-wiki-hit-032",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.983172595500946
+    },
+    {
+      "case_id": "paws-wiki-hit-033",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9886229038238525
+    },
+    {
+      "case_id": "paws-wiki-hit-034",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9353675842285156
+    },
+    {
+      "case_id": "paws-wiki-hit-035",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9743469953536987
+    },
+    {
+      "case_id": "paws-wiki-hit-036",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9923960566520691
+    },
+    {
+      "case_id": "paws-wiki-hit-037",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9963204860687256
+    },
+    {
+      "case_id": "paws-wiki-hit-038",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9893898963928223
+    },
+    {
+      "case_id": "paws-wiki-hit-039",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9946203827857971
+    },
+    {
+      "case_id": "paws-wiki-hit-040",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9984926581382751
+    },
+    {
+      "case_id": "paws-wiki-hit-041",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9873627424240112
+    },
+    {
+      "case_id": "paws-wiki-hit-042",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9882333278656006
+    },
+    {
+      "case_id": "paws-wiki-hit-043",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9722427129745483
+    },
+    {
+      "case_id": "paws-wiki-hit-044",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.915520429611206
+    },
+    {
+      "case_id": "paws-wiki-hit-045",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9946336150169373
+    },
+    {
+      "case_id": "paws-wiki-hit-046",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.994516909122467
+    },
+    {
+      "case_id": "paws-wiki-hit-047",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9937474131584167
+    },
+    {
+      "case_id": "paws-wiki-hit-048",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9362295269966125
+    },
+    {
+      "case_id": "paws-wiki-hit-049",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9597324728965759
+    },
+    {
+      "case_id": "paws-wiki-hit-050",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9917949438095093
+    },
+    {
+      "case_id": "paws-wiki-hit-051",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9836498498916626
+    },
+    {
+      "case_id": "paws-wiki-hit-052",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9546366930007935
+    },
+    {
+      "case_id": "paws-wiki-hit-053",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9324537515640259
+    },
+    {
+      "case_id": "paws-wiki-hit-054",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.994521975517273
+    },
+    {
+      "case_id": "paws-wiki-hit-055",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9939735531806946
+    },
+    {
+      "case_id": "paws-wiki-hit-056",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9875173568725586
+    },
+    {
+      "case_id": "paws-wiki-hit-057",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9563649296760559
+    },
+    {
+      "case_id": "paws-wiki-hit-058",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9927983283996582
+    },
+    {
+      "case_id": "paws-wiki-hit-059",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.995695173740387
+    },
+    {
+      "case_id": "paws-wiki-hit-060",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9941083192825317
+    },
+    {
+      "case_id": "paws-wiki-hit-061",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9129059314727783
+    },
+    {
+      "case_id": "paws-wiki-hit-062",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9212567806243896
+    },
+    {
+      "case_id": "paws-wiki-hit-063",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9985374808311462
+    },
+    {
+      "case_id": "paws-wiki-hit-064",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9644280672073364
+    },
+    {
+      "case_id": "paws-wiki-hit-065",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9795780181884766
+    },
+    {
+      "case_id": "paws-wiki-hit-066",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9252583980560303
+    },
+    {
+      "case_id": "paws-wiki-hit-067",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.936687707901001
+    },
+    {
+      "case_id": "paws-wiki-hit-068",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9971048831939697
+    },
+    {
+      "case_id": "paws-wiki-hit-069",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9461365938186646
+    },
+    {
+      "case_id": "paws-wiki-hit-070",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9954200387001038
+    },
+    {
+      "case_id": "paws-wiki-hit-071",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9953085780143738
+    },
+    {
+      "case_id": "paws-wiki-hit-072",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9826855659484863
+    },
+    {
+      "case_id": "paws-wiki-hit-073",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.8799968957901001
+    },
+    {
+      "case_id": "paws-wiki-hit-074",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.7748401165008545
+    },
+    {
+      "case_id": "paws-wiki-hit-075",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9685536623001099
+    },
+    {
+      "case_id": "paws-wiki-hit-076",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9553158283233643
+    },
+    {
+      "case_id": "paws-wiki-hit-077",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9720999598503113
+    },
+    {
+      "case_id": "paws-wiki-hit-078",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9950305223464966
+    },
+    {
+      "case_id": "paws-wiki-hit-079",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9861762523651123
+    },
+    {
+      "case_id": "paws-wiki-hit-080",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9459948539733887
+    },
+    {
+      "case_id": "paws-wiki-hit-081",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9326635599136353
+    },
+    {
+      "case_id": "paws-wiki-hit-082",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.8788350224494934
+    },
+    {
+      "case_id": "paws-wiki-hit-083",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9175170660018921
+    },
+    {
+      "case_id": "paws-wiki-hit-084",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.984843373298645
+    },
+    {
+      "case_id": "paws-wiki-hit-085",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9474308490753174
+    },
+    {
+      "case_id": "paws-wiki-hit-086",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9087095260620117
+    },
+    {
+      "case_id": "paws-wiki-hit-087",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9270822405815125
+    },
+    {
+      "case_id": "paws-wiki-hit-088",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.952393651008606
+    },
+    {
+      "case_id": "paws-wiki-hit-089",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9846384525299072
+    },
+    {
+      "case_id": "paws-wiki-hit-090",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9753087759017944
+    },
+    {
+      "case_id": "paws-wiki-hit-091",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9777340888977051
+    },
+    {
+      "case_id": "paws-wiki-hit-092",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9594776630401611
+    },
+    {
+      "case_id": "paws-wiki-hit-093",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9765844345092773
+    },
+    {
+      "case_id": "paws-wiki-hit-094",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9918205738067627
+    },
+    {
+      "case_id": "paws-wiki-hit-095",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9278054237365723
+    },
+    {
+      "case_id": "paws-wiki-hit-096",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.8487181663513184
+    },
+    {
+      "case_id": "paws-wiki-hit-097",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9706120491027832
+    },
+    {
+      "case_id": "paws-wiki-hit-098",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.967421293258667
+    },
+    {
+      "case_id": "paws-wiki-hit-099",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9838244318962097
+    },
+    {
+      "case_id": "paws-wiki-hit-100",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9639277458190918
+    },
+    {
+      "case_id": "paws-wiki-hit-101",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9880280494689941
+    },
+    {
+      "case_id": "paws-wiki-hit-102",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9911544919013977
+    },
+    {
+      "case_id": "paws-wiki-hit-103",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9949201345443726
+    },
+    {
+      "case_id": "paws-wiki-hit-104",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9971814155578613
+    },
+    {
+      "case_id": "paws-wiki-hit-105",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9607702493667603
+    },
+    {
+      "case_id": "paws-wiki-hit-106",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.8948912620544434
+    },
+    {
+      "case_id": "paws-wiki-hit-107",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9124542474746704
+    },
+    {
+      "case_id": "paws-wiki-hit-108",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9962747693061829
+    },
+    {
+      "case_id": "paws-wiki-hit-109",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9681425094604492
+    },
+    {
+      "case_id": "paws-wiki-hit-110",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9035966396331787
+    },
+    {
+      "case_id": "paws-wiki-hit-111",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9659911394119263
+    },
+    {
+      "case_id": "paws-wiki-hit-112",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9981252551078796
+    },
+    {
+      "case_id": "paws-wiki-hit-113",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9857999682426453
+    },
+    {
+      "case_id": "paws-wiki-hit-114",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9895337224006653
+    },
+    {
+      "case_id": "paws-wiki-hit-115",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9778957366943359
+    },
+    {
+      "case_id": "paws-wiki-hit-116",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9999998807907104
+    },
+    {
+      "case_id": "paws-wiki-hit-117",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.985142171382904
+    },
+    {
+      "case_id": "paws-wiki-hit-118",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9862743616104126
+    },
+    {
+      "case_id": "paws-wiki-hit-119",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9882842898368835
+    },
+    {
+      "case_id": "paws-wiki-hit-120",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9606088995933533
+    },
+    {
+      "case_id": "paws-wiki-hit-121",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9827030897140503
+    },
+    {
+      "case_id": "paws-wiki-hit-122",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9565999507904053
+    },
+    {
+      "case_id": "paws-wiki-hit-123",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9415023326873779
+    },
+    {
+      "case_id": "paws-wiki-hit-124",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.994883120059967
+    },
+    {
+      "case_id": "paws-wiki-hit-125",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9835266470909119
+    },
+    {
+      "case_id": "paws-wiki-hit-126",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9546067714691162
+    },
+    {
+      "case_id": "paws-wiki-hit-127",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9844977855682373
+    },
+    {
+      "case_id": "paws-wiki-hit-128",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9850214719772339
+    },
+    {
+      "case_id": "paws-wiki-hit-129",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9124807715415955
+    },
+    {
+      "case_id": "paws-wiki-hit-130",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9528891444206238
+    },
+    {
+      "case_id": "paws-wiki-hit-131",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9956719875335693
+    },
+    {
+      "case_id": "paws-wiki-hit-132",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9827746152877808
+    },
+    {
+      "case_id": "paws-wiki-hit-133",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9767398834228516
+    },
+    {
+      "case_id": "paws-wiki-hit-134",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9574060440063477
+    },
+    {
+      "case_id": "paws-wiki-hit-135",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9467231035232544
+    },
+    {
+      "case_id": "paws-wiki-hit-136",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9065008163452148
+    },
+    {
+      "case_id": "paws-wiki-hit-137",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9799390435218811
+    },
+    {
+      "case_id": "paws-wiki-hit-138",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9983875751495361
+    },
+    {
+      "case_id": "paws-wiki-hit-139",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9935492277145386
+    },
+    {
+      "case_id": "paws-wiki-hit-140",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9710689187049866
+    },
+    {
+      "case_id": "paws-wiki-hit-141",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9694554209709167
+    },
+    {
+      "case_id": "paws-wiki-hit-142",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9626323580741882
+    },
+    {
+      "case_id": "paws-wiki-hit-143",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9925044178962708
+    },
+    {
+      "case_id": "paws-wiki-hit-144",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9755640029907227
+    },
+    {
+      "case_id": "paws-wiki-hit-145",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9299672842025757
+    },
+    {
+      "case_id": "paws-wiki-hit-146",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9887449741363525
+    },
+    {
+      "case_id": "paws-wiki-hit-147",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9577372670173645
+    },
+    {
+      "case_id": "paws-wiki-hit-148",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9793607592582703
+    },
+    {
+      "case_id": "paws-wiki-hit-149",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9920455813407898
+    },
+    {
+      "case_id": "paws-wiki-hit-150",
+      "category": "external_paraphrase_proxy",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9808797836303711
+    },
+    {
+      "case_id": "paws-wiki-miss-001",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9554310441017151
+    },
+    {
+      "case_id": "paws-wiki-miss-002",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9404639005661011
+    },
+    {
+      "case_id": "paws-wiki-miss-003",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8789697289466858
+    },
+    {
+      "case_id": "paws-wiki-miss-004",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9571890830993652
+    },
+    {
+      "case_id": "paws-wiki-miss-005",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9527344703674316
+    },
+    {
+      "case_id": "paws-wiki-miss-006",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9877279996871948
+    },
+    {
+      "case_id": "paws-wiki-miss-007",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9478861093521118
+    },
+    {
+      "case_id": "paws-wiki-miss-008",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9675909280776978
+    },
+    {
+      "case_id": "paws-wiki-miss-009",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9852825999259949
+    },
+    {
+      "case_id": "paws-wiki-miss-010",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9554572105407715
+    },
+    {
+      "case_id": "paws-wiki-miss-011",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9662123322486877
+    },
+    {
+      "case_id": "paws-wiki-miss-012",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9723299741744995
+    },
+    {
+      "case_id": "paws-wiki-miss-013",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9776740670204163
+    },
+    {
+      "case_id": "paws-wiki-miss-014",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9185446500778198
+    },
+    {
+      "case_id": "paws-wiki-miss-015",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9611186981201172
+    },
+    {
+      "case_id": "paws-wiki-miss-016",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8831071257591248
+    },
+    {
+      "case_id": "paws-wiki-miss-017",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9330763816833496
+    },
+    {
+      "case_id": "paws-wiki-miss-018",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9683871269226074
+    },
+    {
+      "case_id": "paws-wiki-miss-019",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9049456715583801
+    },
+    {
+      "case_id": "paws-wiki-miss-020",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9737406373023987
+    },
+    {
+      "case_id": "paws-wiki-miss-021",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9523521065711975
+    },
+    {
+      "case_id": "paws-wiki-miss-022",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9063721895217896
+    },
+    {
+      "case_id": "paws-wiki-miss-023",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9735509753227234
+    },
+    {
+      "case_id": "paws-wiki-miss-024",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9710572361946106
+    },
+    {
+      "case_id": "paws-wiki-miss-025",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9578874707221985
+    },
+    {
+      "case_id": "paws-wiki-miss-026",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8940646648406982
+    },
+    {
+      "case_id": "paws-wiki-miss-027",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9509180188179016
+    },
+    {
+      "case_id": "paws-wiki-miss-028",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9664276838302612
+    },
+    {
+      "case_id": "paws-wiki-miss-029",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7105791568756104
+    },
+    {
+      "case_id": "paws-wiki-miss-030",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9722856283187866
+    },
+    {
+      "case_id": "paws-wiki-miss-031",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9634096026420593
+    },
+    {
+      "case_id": "paws-wiki-miss-032",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9703798294067383
+    },
+    {
+      "case_id": "paws-wiki-miss-033",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9735502004623413
+    },
+    {
+      "case_id": "paws-wiki-miss-034",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9920403957366943
+    },
+    {
+      "case_id": "paws-wiki-miss-035",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.964735209941864
+    },
+    {
+      "case_id": "paws-wiki-miss-036",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9330025911331177
+    },
+    {
+      "case_id": "paws-wiki-miss-037",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9385707378387451
+    },
+    {
+      "case_id": "paws-wiki-miss-038",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8932703137397766
+    },
+    {
+      "case_id": "paws-wiki-miss-039",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8971848487854004
+    },
+    {
+      "case_id": "paws-wiki-miss-040",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7623902559280396
+    },
+    {
+      "case_id": "paws-wiki-miss-041",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.97171550989151
+    },
+    {
+      "case_id": "paws-wiki-miss-042",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.96393221616745
+    },
+    {
+      "case_id": "paws-wiki-miss-043",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9562976360321045
+    },
+    {
+      "case_id": "paws-wiki-miss-044",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9877981543540955
+    },
+    {
+      "case_id": "paws-wiki-miss-045",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9778891801834106
+    },
+    {
+      "case_id": "paws-wiki-miss-046",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9948040843009949
+    },
+    {
+      "case_id": "paws-wiki-miss-047",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9802392721176147
+    },
+    {
+      "case_id": "paws-wiki-miss-048",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8828521966934204
+    },
+    {
+      "case_id": "paws-wiki-miss-049",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9682353734970093
+    },
+    {
+      "case_id": "paws-wiki-miss-050",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9685201048851013
+    },
+    {
+      "case_id": "paws-wiki-miss-051",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9569502472877502
+    },
+    {
+      "case_id": "paws-wiki-miss-052",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9883199334144592
+    },
+    {
+      "case_id": "paws-wiki-miss-053",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9861037731170654
+    },
+    {
+      "case_id": "paws-wiki-miss-054",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9912722110748291
+    },
+    {
+      "case_id": "paws-wiki-miss-055",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9425733089447021
+    },
+    {
+      "case_id": "paws-wiki-miss-056",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9276118278503418
+    },
+    {
+      "case_id": "paws-wiki-miss-057",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9816468358039856
+    },
+    {
+      "case_id": "paws-wiki-miss-058",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9442757964134216
+    },
+    {
+      "case_id": "paws-wiki-miss-059",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9083983898162842
+    },
+    {
+      "case_id": "paws-wiki-miss-060",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9874222278594971
+    },
+    {
+      "case_id": "paws-wiki-miss-061",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9698688983917236
+    },
+    {
+      "case_id": "paws-wiki-miss-062",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9858087301254272
+    },
+    {
+      "case_id": "paws-wiki-miss-063",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9363951683044434
+    },
+    {
+      "case_id": "paws-wiki-miss-064",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9753493070602417
+    },
+    {
+      "case_id": "paws-wiki-miss-065",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9413811564445496
+    },
+    {
+      "case_id": "paws-wiki-miss-066",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9325682520866394
+    },
+    {
+      "case_id": "paws-wiki-miss-067",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9382511377334595
+    },
+    {
+      "case_id": "paws-wiki-miss-068",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9605916738510132
+    },
+    {
+      "case_id": "paws-wiki-miss-069",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9850202798843384
+    },
+    {
+      "case_id": "paws-wiki-miss-070",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9876939058303833
+    },
+    {
+      "case_id": "paws-wiki-miss-071",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.929112434387207
+    },
+    {
+      "case_id": "paws-wiki-miss-072",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9721934795379639
+    },
+    {
+      "case_id": "paws-wiki-miss-073",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9890382885932922
+    },
+    {
+      "case_id": "paws-wiki-miss-074",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9877244234085083
+    },
+    {
+      "case_id": "paws-wiki-miss-075",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9634689092636108
+    },
+    {
+      "case_id": "paws-wiki-miss-076",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.923578679561615
+    },
+    {
+      "case_id": "paws-wiki-miss-077",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.927899181842804
+    },
+    {
+      "case_id": "paws-wiki-miss-078",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9707756042480469
+    },
+    {
+      "case_id": "paws-wiki-miss-079",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9567316770553589
+    },
+    {
+      "case_id": "paws-wiki-miss-080",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9381656646728516
+    },
+    {
+      "case_id": "paws-wiki-miss-081",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9216747283935547
+    },
+    {
+      "case_id": "paws-wiki-miss-082",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9464566707611084
+    },
+    {
+      "case_id": "paws-wiki-miss-083",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9756118059158325
+    },
+    {
+      "case_id": "paws-wiki-miss-084",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9550083875656128
+    },
+    {
+      "case_id": "paws-wiki-miss-085",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9533050656318665
+    },
+    {
+      "case_id": "paws-wiki-miss-086",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9664943218231201
+    },
+    {
+      "case_id": "paws-wiki-miss-087",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9885342717170715
+    },
+    {
+      "case_id": "paws-wiki-miss-088",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9363816380500793
+    },
+    {
+      "case_id": "paws-wiki-miss-089",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9386882781982422
+    },
+    {
+      "case_id": "paws-wiki-miss-090",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9463476538658142
+    },
+    {
+      "case_id": "paws-wiki-miss-091",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8522897958755493
+    },
+    {
+      "case_id": "paws-wiki-miss-092",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9859394431114197
+    },
+    {
+      "case_id": "paws-wiki-miss-093",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8086868524551392
+    },
+    {
+      "case_id": "paws-wiki-miss-094",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9464479684829712
+    },
+    {
+      "case_id": "paws-wiki-miss-095",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9439352750778198
+    },
+    {
+      "case_id": "paws-wiki-miss-096",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8789106607437134
+    },
+    {
+      "case_id": "paws-wiki-miss-097",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.965190589427948
+    },
+    {
+      "case_id": "paws-wiki-miss-098",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9501100778579712
+    },
+    {
+      "case_id": "paws-wiki-miss-099",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9421781301498413
+    },
+    {
+      "case_id": "paws-wiki-miss-100",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.946650505065918
+    },
+    {
+      "case_id": "paws-wiki-miss-101",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9880378842353821
+    },
+    {
+      "case_id": "paws-wiki-miss-102",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.98795086145401
+    },
+    {
+      "case_id": "paws-wiki-miss-103",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9822140336036682
+    },
+    {
+      "case_id": "paws-wiki-miss-104",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9178467988967896
+    },
+    {
+      "case_id": "paws-wiki-miss-105",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9541926383972168
+    },
+    {
+      "case_id": "paws-wiki-miss-106",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9256663918495178
+    },
+    {
+      "case_id": "paws-wiki-miss-107",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9593219757080078
+    },
+    {
+      "case_id": "paws-wiki-miss-108",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.931610643863678
+    },
+    {
+      "case_id": "paws-wiki-miss-109",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.952635645866394
+    },
+    {
+      "case_id": "paws-wiki-miss-110",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9888080954551697
+    },
+    {
+      "case_id": "paws-wiki-miss-111",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9770903587341309
+    },
+    {
+      "case_id": "paws-wiki-miss-112",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9515158534049988
+    },
+    {
+      "case_id": "paws-wiki-miss-113",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9750641584396362
+    },
+    {
+      "case_id": "paws-wiki-miss-114",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8813809156417847
+    },
+    {
+      "case_id": "paws-wiki-miss-115",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9617152810096741
+    },
+    {
+      "case_id": "paws-wiki-miss-116",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9812248945236206
+    },
+    {
+      "case_id": "paws-wiki-miss-117",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9556751251220703
+    },
+    {
+      "case_id": "paws-wiki-miss-118",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.889284610748291
+    },
+    {
+      "case_id": "paws-wiki-miss-119",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9672627449035645
+    },
+    {
+      "case_id": "paws-wiki-miss-120",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.932036280632019
+    },
+    {
+      "case_id": "paws-wiki-miss-121",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9416547417640686
+    },
+    {
+      "case_id": "paws-wiki-miss-122",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9167618751525879
+    },
+    {
+      "case_id": "paws-wiki-miss-123",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8978140354156494
+    },
+    {
+      "case_id": "paws-wiki-miss-124",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8930935859680176
+    },
+    {
+      "case_id": "paws-wiki-miss-125",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9503767490386963
+    },
+    {
+      "case_id": "paws-wiki-miss-126",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9396234154701233
+    },
+    {
+      "case_id": "paws-wiki-miss-127",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9991098046302795
+    },
+    {
+      "case_id": "paws-wiki-miss-128",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9664396047592163
+    },
+    {
+      "case_id": "paws-wiki-miss-129",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9910953044891357
+    },
+    {
+      "case_id": "paws-wiki-miss-130",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9368321895599365
+    },
+    {
+      "case_id": "paws-wiki-miss-131",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9498436450958252
+    },
+    {
+      "case_id": "paws-wiki-miss-132",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9933910369873047
+    },
+    {
+      "case_id": "paws-wiki-miss-133",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9808855056762695
+    },
+    {
+      "case_id": "paws-wiki-miss-134",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9556939601898193
+    },
+    {
+      "case_id": "paws-wiki-miss-135",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9486961364746094
+    },
+    {
+      "case_id": "paws-wiki-miss-136",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9061539173126221
+    },
+    {
+      "case_id": "paws-wiki-miss-137",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9304689168930054
+    },
+    {
+      "case_id": "paws-wiki-miss-138",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9682742357254028
+    },
+    {
+      "case_id": "paws-wiki-miss-139",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9374428987503052
+    },
+    {
+      "case_id": "paws-wiki-miss-140",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9589177966117859
+    },
+    {
+      "case_id": "paws-wiki-miss-141",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9662895202636719
+    },
+    {
+      "case_id": "paws-wiki-miss-142",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8805859684944153
+    },
+    {
+      "case_id": "paws-wiki-miss-143",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9511634111404419
+    },
+    {
+      "case_id": "paws-wiki-miss-144",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.981029748916626
+    },
+    {
+      "case_id": "paws-wiki-miss-145",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9724838733673096
+    },
+    {
+      "case_id": "paws-wiki-miss-146",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9833354949951172
+    },
+    {
+      "case_id": "paws-wiki-miss-147",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9198137521743774
+    },
+    {
+      "case_id": "paws-wiki-miss-148",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9251525402069092
+    },
+    {
+      "case_id": "paws-wiki-miss-149",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9653176069259644
+    },
+    {
+      "case_id": "paws-wiki-miss-150",
+      "category": "external_adversarial_proxy",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9367564916610718
+    }
+  ],
+  "threshold_results": [
+    {
+      "threshold": 0.7,
+      "total_cases": 300,
+      "predicted_hits": 300,
+      "valid_hits": 150,
+      "false_hits": 150,
+      "verification_rejections": 0,
+      "hit_rate": 1.0,
+      "hit_precision": 0.5,
+      "false_hit_rate": 0.5,
+      "valid_reuse_recall": 1.0,
+      "f1": 0.6666666666666666,
+      "false_hits_by_category": {
+        "external_adversarial_proxy": 150
+      }
+    },
+    {
+      "threshold": 0.8,
+      "total_cases": 300,
+      "predicted_hits": 296,
+      "valid_hits": 148,
+      "false_hits": 148,
+      "verification_rejections": 0,
+      "hit_rate": 0.9866666666666667,
+      "hit_precision": 0.5,
+      "false_hit_rate": 0.5,
+      "valid_reuse_recall": 0.9866666666666667,
+      "f1": 0.663677130044843,
+      "false_hits_by_category": {
+        "external_adversarial_proxy": 148
+      }
+    },
+    {
+      "threshold": 0.85,
+      "total_cases": 300,
+      "predicted_hits": 294,
+      "valid_hits": 147,
+      "false_hits": 147,
+      "verification_rejections": 0,
+      "hit_rate": 0.98,
+      "hit_precision": 0.5,
+      "false_hit_rate": 0.5,
+      "valid_reuse_recall": 0.98,
+      "f1": 0.6621621621621622,
+      "false_hits_by_category": {
+        "external_adversarial_proxy": 147
+      }
+    },
+    {
+      "threshold": 0.88,
+      "total_cases": 300,
+      "predicted_hits": 289,
+      "valid_hits": 145,
+      "false_hits": 144,
+      "verification_rejections": 0,
+      "hit_rate": 0.9633333333333334,
+      "hit_precision": 0.5017301038062284,
+      "false_hit_rate": 0.4982698961937716,
+      "valid_reuse_recall": 0.9666666666666667,
+      "f1": 0.6605922551252847,
+      "false_hits_by_category": {
+        "external_adversarial_proxy": 144
+      }
+    },
+    {
+      "threshold": 0.9,
+      "total_cases": 300,
+      "predicted_hits": 278,
+      "valid_hits": 144,
+      "false_hits": 134,
+      "verification_rejections": 0,
+      "hit_rate": 0.9266666666666666,
+      "hit_precision": 0.5179856115107914,
+      "false_hit_rate": 0.48201438848920863,
+      "valid_reuse_recall": 0.96,
+      "f1": 0.6728971962616823,
+      "false_hits_by_category": {
+        "external_adversarial_proxy": 134
+      }
+    },
+    {
+      "threshold": 0.92,
+      "total_cases": 300,
+      "predicted_hits": 261,
+      "valid_hits": 135,
+      "false_hits": 126,
+      "verification_rejections": 0,
+      "hit_rate": 0.87,
+      "hit_precision": 0.5172413793103449,
+      "false_hit_rate": 0.4827586206896552,
+      "valid_reuse_recall": 0.9,
+      "f1": 0.6569343065693432,
+      "false_hits_by_category": {
+        "external_adversarial_proxy": 126
+      }
+    },
+    {
+      "threshold": 0.94,
+      "total_cases": 300,
+      "predicted_hits": 226,
+      "valid_hits": 123,
+      "false_hits": 103,
+      "verification_rejections": 0,
+      "hit_rate": 0.7533333333333333,
+      "hit_precision": 0.5442477876106194,
+      "false_hit_rate": 0.4557522123893805,
+      "valid_reuse_recall": 0.82,
+      "f1": 0.6542553191489362,
+      "false_hits_by_category": {
+        "external_adversarial_proxy": 103
+      }
+    },
+    {
+      "threshold": 0.95,
+      "total_cases": 300,
+      "predicted_hits": 203,
+      "valid_hits": 114,
+      "false_hits": 89,
+      "verification_rejections": 0,
+      "hit_rate": 0.6766666666666666,
+      "hit_precision": 0.5615763546798029,
+      "false_hit_rate": 0.43842364532019706,
+      "valid_reuse_recall": 0.76,
+      "f1": 0.6458923512747875,
+      "false_hits_by_category": {
+        "external_adversarial_proxy": 89
+      }
+    },
+    {
+      "threshold": 0.96,
+      "total_cases": 300,
+      "predicted_hits": 170,
+      "valid_hits": 103,
+      "false_hits": 67,
+      "verification_rejections": 0,
+      "hit_rate": 0.5666666666666667,
+      "hit_precision": 0.6058823529411764,
+      "false_hit_rate": 0.3941176470588235,
+      "valid_reuse_recall": 0.6866666666666666,
+      "f1": 0.6437499999999999,
+      "false_hits_by_category": {
+        "external_adversarial_proxy": 67
+      }
+    },
+    {
+      "threshold": 0.98,
+      "total_cases": 300,
+      "predicted_hits": 103,
+      "valid_hits": 74,
+      "false_hits": 29,
+      "verification_rejections": 0,
+      "hit_rate": 0.3433333333333333,
+      "hit_precision": 0.7184466019417476,
+      "false_hit_rate": 0.2815533980582524,
+      "valid_reuse_recall": 0.49333333333333335,
+      "f1": 0.5849802371541503,
+      "false_hits_by_category": {
+        "external_adversarial_proxy": 29
+      }
+    },
+    {
+      "threshold": 1.0,
+      "total_cases": 300,
+      "predicted_hits": 0,
+      "valid_hits": 0,
+      "false_hits": 0,
+      "verification_rejections": 0,
+      "hit_rate": 0.0,
+      "hit_precision": null,
+      "false_hit_rate": null,
+      "valid_reuse_recall": 0.0,
+      "f1": null,
+      "false_hits_by_category": {}
+    }
+  ]
+}

@@ -1,0 +1,1654 @@
+{
+  "what_this_is": "Real provider + real embeddings, localhost HTTP, in-memory store. Costs are estimates from configured prices.",
+  "model": "openai/gpt-4.1-mini",
+  "system_prompt_chars": 32,
+  "threshold": 0.95,
+  "seed": 42,
+  "constraint_guard": "on (CacheService default)",
+  "pricing_usd_per_million_tokens": {
+    "input": 0.4,
+    "output": 1.6,
+    "embedding": 0.02
+  },
+  "requests": 165,
+  "completed": 149,
+  "errors": 16,
+  "composition": {
+    "first_seen": 38,
+    "no_store": 15,
+    "exact_repeat": 104,
+    "paraphrase": 8
+  },
+  "status_counts": {
+    "MISS": 38,
+    "BYPASS": 8,
+    "HIT": 103
+  },
+  "hit_rate_of_cacheable": 0.7304964539007093,
+  "provider_calls_direct": 99,
+  "provider_calls_via_proxy": 46,
+  "hits_valid": 103,
+  "hits_false": 0,
+  "latency_direct_ms": {
+    "average_ms": 970.3104995858464,
+    "p50_ms": 954.66099999976,
+    "p95_ms": 1312.6014169997688,
+    "p99_ms": 1488.8633750001645
+  },
+  "latency_proxy_ms_all": {
+    "average_ms": 367.72801425500717,
+    "p50_ms": 2.0550409999486874,
+    "p95_ms": 1405.21229199976,
+    "p99_ms": 1849.7866669999894
+  },
+  "latency_proxy_ms_by_status": {
+    "MISS": {
+      "average_ms": 1226.2387368946772,
+      "p50_ms": 1174.167457999829,
+      "p95_ms": 1737.6598340001692,
+      "p99_ms": 1878.8868330002515
+    },
+    "BYPASS": {
+      "average_ms": 1001.7347709999171,
+      "p50_ms": 895.4237079997256,
+      "p95_ms": 1849.7866669999894,
+      "p99_ms": 1849.7866669999894
+    },
+    "HIT": {
+      "average_ms": 1.7526597475631047,
+      "p50_ms": 1.7055829998753325,
+      "p95_ms": 2.809999999954016,
+      "p99_ms": 3.2094170001073508
+    }
+  },
+  "paired_proxy_minus_direct_ms_median": {
+    "MISS": 314.1438340003333,
+    "BYPASS": 0.31800000033399556
+  },
+  "estimated_cost_usd": {
+    "e2e-chat-direct": 0.010867,
+    "e2e-chat-proxy": 0.004472,
+    "e2e-embeddings-proxy": 1.3e-05,
+    "direct_total": 0.010867,
+    "proxy_total": 0.004486
+  },
+  "estimated_net_savings_pct": 58.72013840320975,
+  "proxy_metrics_summary": {
+    "stores": 38,
+    "not_stored": 0,
+    "not_stored_reasons": {},
+    "embedding_requests": 38,
+    "estimated_chat_cost_avoided_usd": 0.011532800000000008,
+    "estimated_net_cost_saved_usd": 0.011522195000000008,
+    "near_misses": 2,
+    "verification_rejections": 0,
+    "bypass_reasons": {
+      "client_no_store": 8
+    }
+  },
+  "ledger_total_usd_after_run": 0.017754,
+  "caveats": [
+    "Single run, one seed, ~120 requests: percentiles above P95 are not statistically meaningful.",
+    "Provider latency is shared internet latency and varies run to run; compare arms within this run only.",
+    "Proxy and direct arms run in one process on one machine; the in-memory store has no network hop.",
+    "HIT validity is judged by the QQP-derived intent oracle, a proxy label, not a human review."
+  ],
+  "requests_detail": [
+    {
+      "index": 0,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0386",
+      "status": "MISS",
+      "proxy_ms": 1103.4597079997184,
+      "direct_ms": 799.1623339999023,
+      "similarity": null
+    },
+    {
+      "index": 1,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0128",
+      "status": "MISS",
+      "proxy_ms": 1364.1317919996254,
+      "direct_ms": 879.6849579998707,
+      "similarity": 0.423
+    },
+    {
+      "index": 2,
+      "kind": "no_store",
+      "intent_id": "qqp-intent-0144",
+      "status": "BYPASS",
+      "proxy_ms": 895.4237079997256,
+      "direct_ms": 868.7621670001135,
+      "similarity": null
+    },
+    {
+      "index": 3,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0265",
+      "status": "MISS",
+      "proxy_ms": 1133.2579169998098,
+      "direct_ms": 782.7700829998321,
+      "similarity": 0.2362
+    },
+    {
+      "index": 4,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0196",
+      "status": "MISS",
+      "proxy_ms": 1230.11758299981,
+      "direct_ms": 893.6393750000207,
+      "similarity": 0.2119
+    },
+    {
+      "index": 5,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0054",
+      "status": "MISS",
+      "proxy_ms": 1147.2771670000839,
+      "direct_ms": 875.4697089998444,
+      "similarity": 0.3414
+    },
+    {
+      "index": 6,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0337",
+      "status": "MISS",
+      "proxy_ms": 1335.217708000073,
+      "direct_ms": 1288.3185410000806,
+      "similarity": 0.1752
+    },
+    {
+      "index": 7,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.6367920002267056,
+      "direct_ms": 904.3360410000787,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 8,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0241",
+      "status": "MISS",
+      "proxy_ms": 1174.167457999829,
+      "direct_ms": 1065.4137910000827,
+      "similarity": 0.2616
+    },
+    {
+      "index": 9,
+      "kind": "no_store",
+      "intent_id": "qqp-intent-0087",
+      "status": "BYPASS",
+      "proxy_ms": 811.3862079999308,
+      "direct_ms": 824.8762090001946,
+      "similarity": null
+    },
+    {
+      "index": 10,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 2.1199160000833217,
+      "direct_ms": 1217.550416999984,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 11,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 0.9786669997993158,
+      "direct_ms": 1120.6252500001028,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 12,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 2.197457999955077,
+      "direct_ms": 959.318916999564,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 13,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 0.9963749998860294,
+      "direct_ms": 1013.7589579999258,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 14,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0128",
+      "status": "HIT",
+      "proxy_ms": 2.028165999945486,
+      "direct_ms": 983.7132500001644,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 15,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 0.9525000000394357,
+      "direct_ms": 1107.583083999998,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 16,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 1.4967080001042632,
+      "direct_ms": 1041.193958000349,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 17,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.7055829998753325,
+      "direct_ms": 928.1018330002553,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 18,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 1.9791670001723105,
+      "direct_ms": 1045.4902080000466,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 19,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0061",
+      "status": "MISS",
+      "proxy_ms": 1710.7007080003314,
+      "direct_ms": 1060.1267910001297,
+      "similarity": 0.164
+    },
+    {
+      "index": 20,
+      "kind": "no_store",
+      "intent_id": "qqp-intent-0068",
+      "status": "BYPASS",
+      "proxy_ms": 1019.8187089999919,
+      "direct_ms": 1006.6297500002293,
+      "similarity": null
+    },
+    {
+      "index": 21,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0351",
+      "status": "MISS",
+      "proxy_ms": 1405.21229199976,
+      "direct_ms": 1012.3872079998364,
+      "similarity": 0.2661
+    },
+    {
+      "index": 22,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0381",
+      "status": "MISS",
+      "proxy_ms": 1205.9400840003036,
+      "direct_ms": 851.3749999997344,
+      "similarity": 0.2841
+    },
+    {
+      "index": 23,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.1772919997383724,
+      "direct_ms": 1016.0700419996829,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 24,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0292",
+      "status": "MISS",
+      "proxy_ms": 1094.306584000151,
+      "direct_ms": 780.1627499998176,
+      "similarity": 0.3647
+    },
+    {
+      "index": 25,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.408999999966909,
+      "direct_ms": 1122.2077090001221,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 26,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0372",
+      "status": "MISS",
+      "proxy_ms": 906.7122500000551,
+      "direct_ms": 731.6397079998751,
+      "similarity": 0.4832
+    },
+    {
+      "index": 27,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0043",
+      "status": "MISS",
+      "proxy_ms": 1076.2383749997753,
+      "direct_ms": 824.5938339996428,
+      "similarity": 0.2989
+    },
+    {
+      "index": 28,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0351",
+      "status": "HIT",
+      "proxy_ms": 0.7648750001862936,
+      "direct_ms": 1176.1749160000363,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 29,
+      "kind": "paraphrase",
+      "intent_id": "qqp-intent-0196",
+      "status": "MISS",
+      "proxy_ms": 1252.7235839997957,
+      "direct_ms": 875.1054169997587,
+      "similarity": 0.7749
+    },
+    {
+      "index": 30,
+      "kind": "no_store",
+      "intent_id": "qqp-intent-0103",
+      "status": "BYPASS",
+      "proxy_ms": 1849.7866669999894,
+      "direct_ms": 1344.240875000196,
+      "similarity": null
+    },
+    {
+      "index": 31,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0071",
+      "status": "MISS",
+      "proxy_ms": 1167.1919999998863,
+      "direct_ms": 828.620915999636,
+      "similarity": 0.3535
+    },
+    {
+      "index": 32,
+      "kind": "no_store",
+      "intent_id": "qqp-intent-0179",
+      "status": "BYPASS",
+      "proxy_ms": 922.9544589998113,
+      "direct_ms": 956.5162500002771,
+      "similarity": null
+    },
+    {
+      "index": 33,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0089",
+      "status": "MISS",
+      "proxy_ms": 1444.4235419996403,
+      "direct_ms": 952.7816249997159,
+      "similarity": 0.3303
+    },
+    {
+      "index": 34,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0160",
+      "status": "MISS",
+      "proxy_ms": 1259.779707999769,
+      "direct_ms": 829.3282499998895,
+      "similarity": 0.3359
+    },
+    {
+      "index": 35,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.6358329999093257,
+      "direct_ms": 1070.0848330002373,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 36,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 2.0219579996592074,
+      "direct_ms": 1113.2331250000789,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 37,
+      "kind": "paraphrase",
+      "intent_id": "qqp-intent-0241",
+      "status": "MISS",
+      "proxy_ms": 1737.6598340001692,
+      "direct_ms": 746.1432079999213,
+      "similarity": 0.8366
+    },
+    {
+      "index": 38,
+      "kind": "no_store",
+      "intent_id": "qqp-intent-0135",
+      "status": "BYPASS",
+      "proxy_ms": 842.0024590000139,
+      "direct_ms": 862.153667000257,
+      "similarity": null
+    },
+    {
+      "index": 39,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 1.2649580003198935,
+      "direct_ms": 701.5460829998119,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 40,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.5723750002507586,
+      "direct_ms": 1040.456291999817,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 41,
+      "kind": "no_store",
+      "intent_id": "qqp-intent-0219",
+      "status": "BYPASS",
+      "proxy_ms": 924.0766249999979,
+      "direct_ms": 923.7586249996639,
+      "similarity": null
+    },
+    {
+      "index": 42,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0050",
+      "status": "MISS",
+      "proxy_ms": 1878.8868330002515,
+      "direct_ms": 922.3740419997739,
+      "similarity": 0.2585
+    },
+    {
+      "index": 43,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0124",
+      "status": "MISS",
+      "proxy_ms": 988.2570839999971,
+      "direct_ms": 1430.7635830000436,
+      "similarity": 0.3113
+    },
+    {
+      "index": 44,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 1.8053750000035507,
+      "direct_ms": 1024.244541000371,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 45,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0351",
+      "status": "HIT",
+      "proxy_ms": 0.8840410000630072,
+      "direct_ms": 1187.5904999997147,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 46,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0372",
+      "status": "HIT",
+      "proxy_ms": 1.993708000100014,
+      "direct_ms": 756.4232079998874,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 47,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0003",
+      "status": "MISS",
+      "proxy_ms": 1146.2305830000332,
+      "direct_ms": 734.9659579999752,
+      "similarity": 0.3462
+    },
+    {
+      "index": 48,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0127",
+      "status": "MISS",
+      "proxy_ms": 1020.618542000193,
+      "direct_ms": 919.7723329998553,
+      "similarity": 0.4081
+    },
+    {
+      "index": 49,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 1.7545000000609434,
+      "direct_ms": 954.66099999976,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 50,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 2.03708299977734,
+      "direct_ms": 890.08049999984,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 51,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0196",
+      "status": "HIT",
+      "proxy_ms": 1.1095830000158458,
+      "direct_ms": 1013.8690409999072,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 52,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 1.5497079998567642,
+      "direct_ms": 1037.4824999998964,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 53,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0381",
+      "status": "HIT",
+      "proxy_ms": 0.8258339998974407,
+      "direct_ms": 809.5387080002183,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 54,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0202",
+      "status": "MISS",
+      "proxy_ms": 1428.1161670000984,
+      "direct_ms": 1185.648499999843,
+      "similarity": 0.2602
+    },
+    {
+      "index": 55,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0372",
+      "status": "HIT",
+      "proxy_ms": 1.5670000002501183,
+      "direct_ms": 828.7100000002283,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 56,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.829166999868903,
+      "direct_ms": 1261.9476250001753,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 57,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0354",
+      "status": "MISS",
+      "proxy_ms": 1168.8199999998687,
+      "direct_ms": 842.3969999998917,
+      "similarity": 0.3499
+    },
+    {
+      "index": 58,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0317",
+      "status": "MISS",
+      "proxy_ms": 1562.2827499996674,
+      "direct_ms": 1305.7148329999109,
+      "similarity": 0.392
+    },
+    {
+      "index": 59,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.2310840002101031,
+      "direct_ms": 969.7719590003544,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 60,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 2.187791999858746,
+      "direct_ms": 929.425750000064,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 61,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.0217909998573305,
+      "direct_ms": 1038.4440829998312,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 62,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0128",
+      "status": "HIT",
+      "proxy_ms": 3.0043749998185376,
+      "direct_ms": 996.1636670000189,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 63,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0010",
+      "status": "MISS",
+      "proxy_ms": 1179.448291999961,
+      "direct_ms": 777.9719579998527,
+      "similarity": 0.501
+    },
+    {
+      "index": 64,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0372",
+      "status": "HIT",
+      "proxy_ms": 1.7972499999814318,
+      "direct_ms": 732.0950419998553,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 65,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 0.9674160000940901,
+      "direct_ms": 1124.589042000025,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 66,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0372",
+      "status": "HIT",
+      "proxy_ms": 1.9874580002579023,
+      "direct_ms": 740.7733750001171,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 67,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0380",
+      "status": "MISS",
+      "proxy_ms": 1059.308874999715,
+      "direct_ms": 885.549374999755,
+      "similarity": 0.3246
+    },
+    {
+      "index": 68,
+      "kind": "paraphrase",
+      "intent_id": "qqp-intent-0317",
+      "status": "MISS",
+      "proxy_ms": 1305.1565419996223,
+      "direct_ms": 1020.9932500001742,
+      "similarity": 0.8437
+    },
+    {
+      "index": 69,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0142",
+      "status": "MISS",
+      "proxy_ms": 1122.6300409998657,
+      "direct_ms": 1027.6246670000546,
+      "similarity": 0.2342
+    },
+    {
+      "index": 70,
+      "kind": "paraphrase",
+      "intent_id": "qqp-intent-0265",
+      "status": "MISS",
+      "proxy_ms": 1116.0215840000092,
+      "direct_ms": 749.6335420000833,
+      "similarity": 0.8088
+    },
+    {
+      "index": 71,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.565291000133584,
+      "direct_ms": 1023.6243330000434,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 72,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0277",
+      "status": "MISS",
+      "proxy_ms": 1224.7497909997946,
+      "direct_ms": 1129.642333999982,
+      "similarity": 0.3083
+    },
+    {
+      "index": 73,
+      "kind": "paraphrase",
+      "intent_id": "qqp-intent-0071",
+      "status": "MISS",
+      "proxy_ms": 1037.8405000001294,
+      "direct_ms": 744.0140419998897,
+      "similarity": 0.9406
+    },
+    {
+      "index": 74,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0317",
+      "status": "HIT",
+      "proxy_ms": 2.0124580000810965,
+      "direct_ms": 1488.8633750001645,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 75,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 0.8873330002643343,
+      "direct_ms": 979.9725420002687,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 76,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0351",
+      "status": "HIT",
+      "proxy_ms": 2.0300829996813263,
+      "direct_ms": 1108.0738330001623,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 77,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.1339169996062992,
+      "direct_ms": 985.866083000019,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 78,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0372",
+      "status": "HIT",
+      "proxy_ms": 1.9954160002271237,
+      "direct_ms": 720.1863750001394,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 79,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0127",
+      "status": "HIT",
+      "proxy_ms": 0.9173339999506425,
+      "direct_ms": 798.5045420000461,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 80,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0012",
+      "status": "MISS",
+      "proxy_ms": 1215.9977080000317,
+      "direct_ms": 928.2725420002862,
+      "similarity": 0.3072
+    },
+    {
+      "index": 81,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0124",
+      "status": "HIT",
+      "proxy_ms": 1.2854589999733435,
+      "direct_ms": 772.5542090001909,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 82,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 1.1334589999023592,
+      "direct_ms": 991.831750000074,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 83,
+      "kind": "paraphrase",
+      "intent_id": "qqp-intent-0127",
+      "status": "MISS",
+      "proxy_ms": 920.6901249999646,
+      "direct_ms": 816.5994159999173,
+      "similarity": 0.9329
+    },
+    {
+      "index": 84,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.7212080001627328,
+      "direct_ms": 1434.3462920001002,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 85,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0242",
+      "status": "MISS",
+      "proxy_ms": 1210.0122500000907,
+      "direct_ms": 734.0878749996591,
+      "similarity": 0.3542
+    },
+    {
+      "index": 86,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0395",
+      "status": "MISS",
+      "proxy_ms": 1323.0938750002679,
+      "direct_ms": 928.0657499998597,
+      "similarity": 0.3202
+    },
+    {
+      "index": 87,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 1.3404169999375881,
+      "direct_ms": 822.5183340000513,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 88,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0351",
+      "status": "HIT",
+      "proxy_ms": 2.1536250001190638,
+      "direct_ms": 1183.6970419999489,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 89,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0381",
+      "status": "HIT",
+      "proxy_ms": 1.1353340000823664,
+      "direct_ms": 962.548500000139,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 90,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 2.3759589998917363,
+      "direct_ms": 911.751041000116,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 91,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0164",
+      "status": "MISS",
+      "proxy_ms": 1035.8167079998566,
+      "direct_ms": 912.8653749999103,
+      "similarity": 0.3773
+    },
+    {
+      "index": 92,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0317",
+      "status": "HIT",
+      "proxy_ms": 2.016375000039261,
+      "direct_ms": 1312.6014169997688,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 93,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0081",
+      "status": "MISS",
+      "proxy_ms": 904.5754579997265,
+      "direct_ms": 739.2070000000786,
+      "similarity": 0.3547
+    },
+    {
+      "index": 94,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0317",
+      "status": "HIT",
+      "proxy_ms": 2.3410829999193083,
+      "direct_ms": 1041.9610419999117,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 95,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.093041999865818,
+      "direct_ms": 1015.4243749998386,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 96,
+      "kind": "no_store",
+      "intent_id": "qqp-intent-0319",
+      "status": "BYPASS",
+      "proxy_ms": 748.4293329998764,
+      "direct_ms": 922.4846669999351,
+      "similarity": null
+    },
+    {
+      "index": 97,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 1.8353749997004343,
+      "direct_ms": 876.9839169999614,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 98,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.6829999999572465,
+      "direct_ms": 1249.8659170000792,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 100,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0124",
+      "status": "HIT",
+      "proxy_ms": 2.2991250002633024,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 101,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0386",
+      "status": "HIT",
+      "proxy_ms": 1.3227089998508745,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 102,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 2.0199579998916306,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 103,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.4281250000749424,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 104,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0124",
+      "status": "HIT",
+      "proxy_ms": 2.3207090002870245,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 106,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 2.522290999877441,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 107,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0127",
+      "status": "HIT",
+      "proxy_ms": 1.2689159998444666,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 108,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 2.2773340001549514,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 109,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0164",
+      "status": "HIT",
+      "proxy_ms": 1.5570410000691481,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 110,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0164",
+      "status": "HIT",
+      "proxy_ms": 2.0058750001226144,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 112,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.721374999760883,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 113,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0127",
+      "status": "HIT",
+      "proxy_ms": 1.1344999998073035,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 114,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0196",
+      "status": "HIT",
+      "proxy_ms": 2.4987500000861473,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 115,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 1.1658749999696738,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 117,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0372",
+      "status": "HIT",
+      "proxy_ms": 2.330416999939189,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 119,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 2.6084579999405832,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 120,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0317",
+      "status": "HIT",
+      "proxy_ms": 2.2883749998072744,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 121,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0292",
+      "status": "HIT",
+      "proxy_ms": 1.4187080000738206,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 122,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 2.8047499999956926,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 123,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 1.4178750002429297,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 125,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0351",
+      "status": "HIT",
+      "proxy_ms": 2.2557080001206486,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 126,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0372",
+      "status": "HIT",
+      "proxy_ms": 1.7046660000232805,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 127,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0317",
+      "status": "HIT",
+      "proxy_ms": 1.0279159996571252,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 128,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 3.0337920002239116,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 129,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.2776250000570144,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 130,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 2.4175419998755387,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 131,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0381",
+      "status": "HIT",
+      "proxy_ms": 1.306832999944163,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 132,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 2.4320830002579896,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 133,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.3857089998055017,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 134,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 2.443749999656575,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 135,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0128",
+      "status": "HIT",
+      "proxy_ms": 1.6108749996419647,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 136,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 3.2094170001073508,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 138,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0265",
+      "status": "HIT",
+      "proxy_ms": 2.1704579999095586,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 139,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.3906250001127773,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 140,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.8970840001202305,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 142,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 2.574249999724998,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 143,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 1.309208000293438,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 146,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0061",
+      "status": "HIT",
+      "proxy_ms": 1.1401249998925778,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 147,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0196",
+      "status": "HIT",
+      "proxy_ms": 1.0692500000004657,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 148,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0127",
+      "status": "HIT",
+      "proxy_ms": 2.0550409999486874,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 149,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0081",
+      "status": "HIT",
+      "proxy_ms": 1.5004169999883743,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 151,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 2.3903330002212897,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 152,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 3.230999999686901,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 156,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0372",
+      "status": "HIT",
+      "proxy_ms": 1.7806669998208235,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 157,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0372",
+      "status": "HIT",
+      "proxy_ms": 0.9745000002112647,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 158,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0127",
+      "status": "HIT",
+      "proxy_ms": 2.809999999954016,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 159,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0292",
+      "status": "HIT",
+      "proxy_ms": 1.460250000036467,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 162,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0337",
+      "status": "HIT",
+      "proxy_ms": 2.821458000198618,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 163,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0372",
+      "status": "HIT",
+      "proxy_ms": 1.3941249999334104,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 164,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0241",
+      "status": "HIT",
+      "proxy_ms": 1.8911249999291613,
+      "direct_ms": null,
+      "similarity": 1.0,
+      "valid": true
+    },
+    {
+      "index": 99,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0212",
+      "status": "ERROR",
+      "http_status": 502
+    },
+    {
+      "index": 105,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0055",
+      "status": "ERROR",
+      "http_status": 502
+    },
+    {
+      "index": 111,
+      "kind": "no_store",
+      "intent_id": "qqp-intent-0023",
+      "status": "ERROR",
+      "http_status": 502
+    },
+    {
+      "index": 116,
+      "kind": "paraphrase",
+      "intent_id": "qqp-intent-0395",
+      "status": "ERROR",
+      "http_status": 502
+    },
+    {
+      "index": 118,
+      "kind": "no_store",
+      "intent_id": "qqp-intent-0264",
+      "status": "ERROR",
+      "http_status": 502
+    },
+    {
+      "index": 124,
+      "kind": "paraphrase",
+      "intent_id": "qqp-intent-0380",
+      "status": "ERROR",
+      "http_status": 502
+    },
+    {
+      "index": 137,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0187",
+      "status": "ERROR",
+      "http_status": 502
+    },
+    {
+      "index": 141,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0138",
+      "status": "ERROR",
+      "http_status": 502
+    },
+    {
+      "index": 144,
+      "kind": "no_store",
+      "intent_id": "qqp-intent-0314",
+      "status": "ERROR",
+      "http_status": 502
+    },
+    {
+      "index": 145,
+      "kind": "no_store",
+      "intent_id": "qqp-intent-0379",
+      "status": "ERROR",
+      "http_status": 502
+    },
+    {
+      "index": 150,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0281",
+      "status": "ERROR",
+      "http_status": 502
+    },
+    {
+      "index": 153,
+      "kind": "no_store",
+      "intent_id": "qqp-intent-0290",
+      "status": "ERROR",
+      "http_status": 502
+    },
+    {
+      "index": 154,
+      "kind": "no_store",
+      "intent_id": "qqp-intent-0185",
+      "status": "ERROR",
+      "http_status": 502
+    },
+    {
+      "index": 155,
+      "kind": "no_store",
+      "intent_id": "qqp-intent-0365",
+      "status": "ERROR",
+      "http_status": 502
+    },
+    {
+      "index": 160,
+      "kind": "exact_repeat",
+      "intent_id": "qqp-intent-0138",
+      "status": "ERROR",
+      "http_status": 502
+    },
+    {
+      "index": 161,
+      "kind": "first_seen",
+      "intent_id": "qqp-intent-0150",
+      "status": "ERROR",
+      "http_status": 502
+    }
+  ]
+}

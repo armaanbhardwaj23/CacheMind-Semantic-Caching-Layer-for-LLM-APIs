@@ -1,0 +1,77 @@
+{
+  "SYNTHETIC": "Provider latency and embedder are simulated with configured sleeps; not a measurement of any real API.",
+  "config": {
+    "requests": 3000,
+    "distinct": 200,
+    "unique_fraction": 0.05,
+    "zipf": 1.1,
+    "provider_latency_ms": 800.0,
+    "provider_jitter": 0.2,
+    "embed_latency_ms": 60.0,
+    "seed": 42,
+    "threadpool_size": 200,
+    "unique_prompts": 322
+  },
+  "server_note": "FastAPI sync endpoint => AnyIO threadpool (default 40 threads); blocking misses occupy a thread each.",
+  "runs": [
+    {
+      "workers": 50,
+      "baseline": {
+        "requests": 3000,
+        "http_errors": 0,
+        "throughput_rps": 61.61571695609148,
+        "wall_seconds": 48.68887595900014,
+        "status_counts": {
+          "DIRECT": 3000
+        },
+        "latency_ms": {
+          "average_ms": 804.1723845736651,
+          "p50_ms": 804.5495829992433,
+          "p95_ms": 948.5817919994588,
+          "p99_ms": 960.0189159991714
+        },
+        "latency_ms_by_status": {
+          "DIRECT": {
+            "average_ms": 804.1723845736651,
+            "p50_ms": 804.5495829992433,
+            "p95_ms": 948.5817919994588,
+            "p99_ms": 960.0189159991714
+          }
+        }
+      },
+      "cached": {
+        "requests": 3000,
+        "http_errors": 0,
+        "throughput_rps": 375.6465405215408,
+        "wall_seconds": 7.986230874999819,
+        "status_counts": {
+          "MISS": 421,
+          "HIT": 2579
+        },
+        "latency_ms": {
+          "average_ms": 123.93298007833923,
+          "p50_ms": 1.3502909987437306,
+          "p95_ms": 918.9645410006051,
+          "p99_ms": 1008.6862500011193
+        },
+        "latency_ms_by_status": {
+          "MISS": {
+            "average_ms": 872.1729488337362,
+            "p50_ms": 866.2037919984868,
+            "p95_ms": 1014.4042920001084,
+            "p99_ms": 1029.222208999272
+          },
+          "HIT": {
+            "average_ms": 1.7891154618126,
+            "p50_ms": 1.213083998663933,
+            "p95_ms": 3.043333999812603,
+            "p99_ms": 5.654291999235284
+          }
+        },
+        "provider_calls": 421,
+        "provider_calls_avoided_pct": 85.96666666666667,
+        "redundant_provider_calls": 99
+      }
+    }
+  ]
+}

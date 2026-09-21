@@ -1,0 +1,976 @@
+{
+  "dataset": "evals/cache_reuse_pairs.draft.json",
+  "embedding_model": "openai/text-embedding-3-small",
+  "cases": 118,
+  "acceptable_reuse_cases": 27,
+  "verification": "constraint_guard",
+  "embedding_calls_paid_this_run": 0,
+  "ledger_total_usd_after_run": 0.042365,
+  "max_false_hit_rate_budget": 0.05,
+  "selected_threshold": null,
+  "scored_cases": [
+    {
+      "case_id": "exact-1",
+      "category": "exact_repeat",
+      "reuse_is_acceptable": true,
+      "similarity_score": 1.000000238418579
+    },
+    {
+      "case_id": "paraphrase-1",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.7809829711914062
+    },
+    {
+      "case_id": "entity-1",
+      "category": "changed_entity",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.5768899917602539
+    },
+    {
+      "case_id": "number-1",
+      "category": "changed_number",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8492897748947144
+    },
+    {
+      "case_id": "constraint-1",
+      "category": "changed_constraint",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.933122992515564
+    },
+    {
+      "case_id": "temporal-1",
+      "category": "temporal_change",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9121384620666504
+    },
+    {
+      "case_id": "negation-1",
+      "category": "negation",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8977600336074829
+    },
+    {
+      "case_id": "intent-1",
+      "category": "related_different_intent",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.6986521482467651
+    },
+    {
+      "case_id": "format-1",
+      "category": "changed_output_format",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.5963990688323975
+    },
+    {
+      "case_id": "language-1",
+      "category": "changed_output_language",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7981510162353516
+    },
+    {
+      "case_id": "code-1",
+      "category": "changed_programming_language",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7991304993629456
+    },
+    {
+      "case_id": "math-1",
+      "category": "answer_determining_identifier",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9204490780830383
+    },
+    {
+      "case_id": "direction-1",
+      "category": "reversed_direction",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9810763001441956
+    },
+    {
+      "case_id": "creative-1",
+      "category": "creative_generation",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7142000198364258
+    },
+    {
+      "case_id": "personalization-1",
+      "category": "personalized_context",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8426524996757507
+    },
+    {
+      "case_id": "mutation-1",
+      "category": "mutating_request",
+      "reuse_is_acceptable": false,
+      "similarity_score": 1.0000001192092896
+    },
+    {
+      "case_id": "safe-policy-1",
+      "category": "changed_constraint",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7132008075714111
+    },
+    {
+      "case_id": "scope-1",
+      "category": "changed_scope",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7726583480834961
+    },
+    {
+      "case_id": "ordering-1",
+      "category": "changed_ordering",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9958316087722778
+    },
+    {
+      "case_id": "exact-repeat-02",
+      "category": "exact_repeat",
+      "reuse_is_acceptable": true,
+      "similarity_score": 1.0000001192092896
+    },
+    {
+      "case_id": "exact-repeat-03",
+      "category": "exact_repeat",
+      "reuse_is_acceptable": true,
+      "similarity_score": 1.000000238418579
+    },
+    {
+      "case_id": "exact-repeat-04",
+      "category": "exact_repeat",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9999998807907104
+    },
+    {
+      "case_id": "exact-repeat-05",
+      "category": "exact_repeat",
+      "reuse_is_acceptable": true,
+      "similarity_score": 1.0
+    },
+    {
+      "case_id": "exact-repeat-06",
+      "category": "exact_repeat",
+      "reuse_is_acceptable": true,
+      "similarity_score": 1.0
+    },
+    {
+      "case_id": "exact-repeat-07",
+      "category": "exact_repeat",
+      "reuse_is_acceptable": true,
+      "similarity_score": 1.0
+    },
+    {
+      "case_id": "safe-paraphrase-03",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.830286979675293
+    },
+    {
+      "case_id": "safe-paraphrase-04",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.8846636414527893
+    },
+    {
+      "case_id": "safe-paraphrase-05",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.840110182762146
+    },
+    {
+      "case_id": "safe-paraphrase-06",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9514448642730713
+    },
+    {
+      "case_id": "safe-paraphrase-07",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9655012488365173
+    },
+    {
+      "case_id": "safe-paraphrase-08",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.8862553834915161
+    },
+    {
+      "case_id": "safe-paraphrase-09",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9501092433929443
+    },
+    {
+      "case_id": "safe-paraphrase-10",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.8885942101478577
+    },
+    {
+      "case_id": "safe-paraphrase-11",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9389218091964722
+    },
+    {
+      "case_id": "safe-paraphrase-12",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.934485137462616
+    },
+    {
+      "case_id": "safe-paraphrase-13",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9315733909606934
+    },
+    {
+      "case_id": "safe-paraphrase-14",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.8928937315940857
+    },
+    {
+      "case_id": "safe-paraphrase-15",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.8672213554382324
+    },
+    {
+      "case_id": "safe-paraphrase-16",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.8636188507080078
+    },
+    {
+      "case_id": "safe-paraphrase-17",
+      "category": "safe_paraphrase",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9494304656982422
+    },
+    {
+      "case_id": "safe-paraphrase-18",
+      "category": "related_different_intent",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7749841213226318
+    },
+    {
+      "case_id": "surface-variation-01",
+      "category": "surface_variation",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9344885945320129
+    },
+    {
+      "case_id": "surface-variation-02",
+      "category": "surface_variation",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9635347723960876
+    },
+    {
+      "case_id": "surface-variation-03",
+      "category": "surface_variation",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.8820955753326416
+    },
+    {
+      "case_id": "surface-variation-04",
+      "category": "surface_variation",
+      "reuse_is_acceptable": true,
+      "similarity_score": 0.9648281335830688
+    },
+    {
+      "case_id": "changed-entity-02",
+      "category": "changed_entity",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.623784601688385
+    },
+    {
+      "case_id": "changed-entity-03",
+      "category": "changed_entity",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.45488518476486206
+    },
+    {
+      "case_id": "changed-entity-04",
+      "category": "changed_entity",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.6870955228805542
+    },
+    {
+      "case_id": "changed-entity-05",
+      "category": "changed_entity",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.6587201356887817
+    },
+    {
+      "case_id": "changed-entity-06",
+      "category": "changed_entity",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.6416921615600586
+    },
+    {
+      "case_id": "changed-entity-07",
+      "category": "changed_entity",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.6589604020118713
+    },
+    {
+      "case_id": "changed-entity-08",
+      "category": "changed_entity",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7799034714698792
+    },
+    {
+      "case_id": "changed-entity-09",
+      "category": "changed_entity",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.6299616098403931
+    },
+    {
+      "case_id": "changed-entity-10",
+      "category": "changed_entity",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7523139715194702
+    },
+    {
+      "case_id": "changed-entity-11",
+      "category": "changed_entity",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.6852139234542847
+    },
+    {
+      "case_id": "changed-number-02",
+      "category": "changed_number",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9156799912452698
+    },
+    {
+      "case_id": "changed-number-03",
+      "category": "changed_number",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8801461458206177
+    },
+    {
+      "case_id": "changed-number-04",
+      "category": "changed_number",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8728392124176025
+    },
+    {
+      "case_id": "changed-number-05",
+      "category": "changed_number",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8979066610336304
+    },
+    {
+      "case_id": "changed-number-06",
+      "category": "changed_number",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9113810658454895
+    },
+    {
+      "case_id": "changed-number-07",
+      "category": "changed_number",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9200640916824341
+    },
+    {
+      "case_id": "changed-number-08",
+      "category": "changed_number",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.867999255657196
+    },
+    {
+      "case_id": "changed-number-09",
+      "category": "changed_number",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8887770175933838
+    },
+    {
+      "case_id": "changed-number-10",
+      "category": "changed_number",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9319230914115906
+    },
+    {
+      "case_id": "changed-number-11",
+      "category": "changed_number",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9545609951019287
+    },
+    {
+      "case_id": "changed-number-12",
+      "category": "changed_number",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8982029557228088
+    },
+    {
+      "case_id": "changed-number-13",
+      "category": "changed_number",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7928714752197266
+    },
+    {
+      "case_id": "changed-constraint-02",
+      "category": "changed_constraint",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7918165922164917
+    },
+    {
+      "case_id": "changed-constraint-03",
+      "category": "changed_constraint",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9237455725669861
+    },
+    {
+      "case_id": "changed-constraint-04",
+      "category": "changed_constraint",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8703678846359253
+    },
+    {
+      "case_id": "changed-constraint-05",
+      "category": "changed_constraint",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8944016695022583
+    },
+    {
+      "case_id": "changed-constraint-06",
+      "category": "changed_constraint",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8942273855209351
+    },
+    {
+      "case_id": "changed-constraint-07",
+      "category": "changed_constraint",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9225462675094604
+    },
+    {
+      "case_id": "changed-constraint-08",
+      "category": "changed_constraint",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8521727323532104
+    },
+    {
+      "case_id": "temporal-change-02",
+      "category": "temporal_change",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.6194143295288086
+    },
+    {
+      "case_id": "temporal-change-03",
+      "category": "temporal_change",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7458052635192871
+    },
+    {
+      "case_id": "temporal-change-04",
+      "category": "temporal_change",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8674097061157227
+    },
+    {
+      "case_id": "temporal-change-05",
+      "category": "temporal_change",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7931900024414062
+    },
+    {
+      "case_id": "temporal-change-06",
+      "category": "temporal_change",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8156636357307434
+    },
+    {
+      "case_id": "temporal-change-07",
+      "category": "temporal_change",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8291038870811462
+    },
+    {
+      "case_id": "negation-02",
+      "category": "negation",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9461380839347839
+    },
+    {
+      "case_id": "negation-03",
+      "category": "negation",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8300045728683472
+    },
+    {
+      "case_id": "negation-04",
+      "category": "negation",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.836801290512085
+    },
+    {
+      "case_id": "negation-05",
+      "category": "negation",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.943061351776123
+    },
+    {
+      "case_id": "negation-06",
+      "category": "negation",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8388675451278687
+    },
+    {
+      "case_id": "negation-07",
+      "category": "negation",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9261645674705505
+    },
+    {
+      "case_id": "related-different-intent-02",
+      "category": "related_different_intent",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8502362966537476
+    },
+    {
+      "case_id": "related-different-intent-03",
+      "category": "related_different_intent",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8585187792778015
+    },
+    {
+      "case_id": "related-different-intent-04",
+      "category": "related_different_intent",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7879981994628906
+    },
+    {
+      "case_id": "related-different-intent-05",
+      "category": "related_different_intent",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7434449195861816
+    },
+    {
+      "case_id": "related-different-intent-06",
+      "category": "related_different_intent",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7558436393737793
+    },
+    {
+      "case_id": "related-different-intent-07",
+      "category": "related_different_intent",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7548419833183289
+    },
+    {
+      "case_id": "related-different-intent-08",
+      "category": "related_different_intent",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7456932067871094
+    },
+    {
+      "case_id": "related-different-intent-09",
+      "category": "related_different_intent",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8943584561347961
+    },
+    {
+      "case_id": "changed-output-format-02",
+      "category": "changed_output_format",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8315772414207458
+    },
+    {
+      "case_id": "changed-output-format-03",
+      "category": "changed_output_format",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8537071347236633
+    },
+    {
+      "case_id": "changed-output-format-04",
+      "category": "changed_output_format",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8917185068130493
+    },
+    {
+      "case_id": "changed-output-format-05",
+      "category": "changed_output_format",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9105442762374878
+    },
+    {
+      "case_id": "changed-output-language-02",
+      "category": "changed_output_language",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8172292113304138
+    },
+    {
+      "case_id": "changed-output-language-03",
+      "category": "changed_output_language",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8298608064651489
+    },
+    {
+      "case_id": "changed-programming-language-02",
+      "category": "changed_programming_language",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7593052983283997
+    },
+    {
+      "case_id": "changed-programming-language-03",
+      "category": "changed_programming_language",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7224793434143066
+    },
+    {
+      "case_id": "changed-programming-language-04",
+      "category": "changed_programming_language",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.7855149507522583
+    },
+    {
+      "case_id": "changed-content-01",
+      "category": "changed_content",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9877761602401733
+    },
+    {
+      "case_id": "changed-content-02",
+      "category": "changed_content",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9026379585266113
+    },
+    {
+      "case_id": "reversed-direction-02",
+      "category": "reversed_direction",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9900516867637634
+    },
+    {
+      "case_id": "reversed-direction-03",
+      "category": "reversed_direction",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9758009314537048
+    },
+    {
+      "case_id": "changed-ordering-02",
+      "category": "changed_ordering",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9832293391227722
+    },
+    {
+      "case_id": "creative-generation-02",
+      "category": "creative_generation",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8176007270812988
+    },
+    {
+      "case_id": "personalized-context-02",
+      "category": "personalized_context",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9131433963775635
+    },
+    {
+      "case_id": "personalized-context-03",
+      "category": "personalized_context",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.9134740233421326
+    },
+    {
+      "case_id": "personalized-exact-repeat-01",
+      "category": "personalized_exact_repeat",
+      "reuse_is_acceptable": false,
+      "similarity_score": 1.0
+    },
+    {
+      "case_id": "personalized-exact-repeat-02",
+      "category": "personalized_exact_repeat",
+      "reuse_is_acceptable": false,
+      "similarity_score": 1.0000001192092896
+    },
+    {
+      "case_id": "mutating-request-02",
+      "category": "mutating_request",
+      "reuse_is_acceptable": false,
+      "similarity_score": 1.0
+    },
+    {
+      "case_id": "mutating-request-03",
+      "category": "mutating_request",
+      "reuse_is_acceptable": false,
+      "similarity_score": 1.000000238418579
+    },
+    {
+      "case_id": "mutating-request-04",
+      "category": "mutating_request",
+      "reuse_is_acceptable": false,
+      "similarity_score": 1.0
+    },
+    {
+      "case_id": "changed-scope-02",
+      "category": "changed_scope",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8040038347244263
+    },
+    {
+      "case_id": "changed-scope-03",
+      "category": "changed_scope",
+      "reuse_is_acceptable": false,
+      "similarity_score": 0.8838552236557007
+    }
+  ],
+  "threshold_results": [
+    {
+      "threshold": 0.7,
+      "total_cases": 118,
+      "predicted_hits": 64,
+      "valid_hits": 23,
+      "false_hits": 41,
+      "verification_rejections": 42,
+      "hit_rate": 0.5423728813559322,
+      "hit_precision": 0.359375,
+      "false_hit_rate": 0.640625,
+      "valid_reuse_recall": 0.8518518518518519,
+      "f1": 0.5054945054945055,
+      "false_hits_by_category": {
+        "changed_constraint": 7,
+        "temporal_change": 4,
+        "answer_determining_identifier": 1,
+        "personalized_context": 1,
+        "mutating_request": 4,
+        "changed_scope": 3,
+        "related_different_intent": 9,
+        "changed_entity": 1,
+        "changed_number": 1,
+        "changed_output_format": 3,
+        "changed_content": 2,
+        "reversed_direction": 1,
+        "changed_ordering": 1,
+        "creative_generation": 1,
+        "personalized_exact_repeat": 2
+      }
+    },
+    {
+      "threshold": 0.8,
+      "total_cases": 118,
+      "predicted_hits": 52,
+      "valid_hits": 22,
+      "false_hits": 30,
+      "verification_rejections": 33,
+      "hit_rate": 0.4406779661016949,
+      "hit_precision": 0.4230769230769231,
+      "false_hit_rate": 0.5769230769230769,
+      "valid_reuse_recall": 0.8148148148148148,
+      "f1": 0.5569620253164557,
+      "false_hits_by_category": {
+        "changed_constraint": 5,
+        "temporal_change": 4,
+        "answer_determining_identifier": 1,
+        "personalized_context": 1,
+        "mutating_request": 4,
+        "related_different_intent": 3,
+        "changed_output_format": 3,
+        "changed_content": 2,
+        "reversed_direction": 1,
+        "changed_ordering": 1,
+        "creative_generation": 1,
+        "personalized_exact_repeat": 2,
+        "changed_scope": 2
+      }
+    },
+    {
+      "threshold": 0.85,
+      "total_cases": 118,
+      "predicted_hits": 45,
+      "valid_hits": 21,
+      "false_hits": 24,
+      "verification_rejections": 26,
+      "hit_rate": 0.3813559322033898,
+      "hit_precision": 0.4666666666666667,
+      "false_hit_rate": 0.5333333333333333,
+      "valid_reuse_recall": 0.7777777777777778,
+      "f1": 0.5833333333333334,
+      "false_hits_by_category": {
+        "changed_constraint": 5,
+        "temporal_change": 2,
+        "answer_determining_identifier": 1,
+        "mutating_request": 4,
+        "related_different_intent": 3,
+        "changed_output_format": 2,
+        "changed_content": 2,
+        "reversed_direction": 1,
+        "changed_ordering": 1,
+        "personalized_exact_repeat": 2,
+        "changed_scope": 1
+      }
+    },
+    {
+      "threshold": 0.88,
+      "total_cases": 118,
+      "predicted_hits": 39,
+      "valid_hits": 20,
+      "false_hits": 19,
+      "verification_rejections": 22,
+      "hit_rate": 0.3305084745762712,
+      "hit_precision": 0.5128205128205128,
+      "false_hit_rate": 0.48717948717948717,
+      "valid_reuse_recall": 0.7407407407407407,
+      "f1": 0.6060606060606061,
+      "false_hits_by_category": {
+        "changed_constraint": 4,
+        "temporal_change": 1,
+        "answer_determining_identifier": 1,
+        "mutating_request": 4,
+        "related_different_intent": 1,
+        "changed_output_format": 1,
+        "changed_content": 2,
+        "reversed_direction": 1,
+        "changed_ordering": 1,
+        "personalized_exact_repeat": 2,
+        "changed_scope": 1
+      }
+    },
+    {
+      "threshold": 0.9,
+      "total_cases": 118,
+      "predicted_hits": 31,
+      "valid_hits": 16,
+      "false_hits": 15,
+      "verification_rejections": 15,
+      "hit_rate": 0.2627118644067797,
+      "hit_precision": 0.5161290322580645,
+      "false_hit_rate": 0.4838709677419355,
+      "valid_reuse_recall": 0.5925925925925926,
+      "f1": 0.5517241379310345,
+      "false_hits_by_category": {
+        "changed_constraint": 2,
+        "temporal_change": 1,
+        "answer_determining_identifier": 1,
+        "mutating_request": 4,
+        "changed_output_format": 1,
+        "changed_content": 2,
+        "reversed_direction": 1,
+        "changed_ordering": 1,
+        "personalized_exact_repeat": 2
+      }
+    },
+    {
+      "threshold": 0.92,
+      "total_cases": 118,
+      "predicted_hits": 28,
+      "valid_hits": 16,
+      "false_hits": 12,
+      "verification_rejections": 11,
+      "hit_rate": 0.23728813559322035,
+      "hit_precision": 0.5714285714285714,
+      "false_hit_rate": 0.42857142857142855,
+      "valid_reuse_recall": 0.5925925925925926,
+      "f1": 0.5818181818181818,
+      "false_hits_by_category": {
+        "changed_constraint": 2,
+        "answer_determining_identifier": 1,
+        "mutating_request": 4,
+        "changed_content": 1,
+        "reversed_direction": 1,
+        "changed_ordering": 1,
+        "personalized_exact_repeat": 2
+      }
+    },
+    {
+      "threshold": 0.94,
+      "total_cases": 118,
+      "predicted_hits": 22,
+      "valid_hits": 13,
+      "false_hits": 9,
+      "verification_rejections": 6,
+      "hit_rate": 0.1864406779661017,
+      "hit_precision": 0.5909090909090909,
+      "false_hit_rate": 0.4090909090909091,
+      "valid_reuse_recall": 0.48148148148148145,
+      "f1": 0.5306122448979591,
+      "false_hits_by_category": {
+        "mutating_request": 4,
+        "changed_content": 1,
+        "reversed_direction": 1,
+        "changed_ordering": 1,
+        "personalized_exact_repeat": 2
+      }
+    },
+    {
+      "threshold": 0.95,
+      "total_cases": 118,
+      "predicted_hits": 21,
+      "valid_hits": 12,
+      "false_hits": 9,
+      "verification_rejections": 4,
+      "hit_rate": 0.17796610169491525,
+      "hit_precision": 0.5714285714285714,
+      "false_hit_rate": 0.42857142857142855,
+      "valid_reuse_recall": 0.4444444444444444,
+      "f1": 0.5,
+      "false_hits_by_category": {
+        "mutating_request": 4,
+        "changed_content": 1,
+        "reversed_direction": 1,
+        "changed_ordering": 1,
+        "personalized_exact_repeat": 2
+      }
+    },
+    {
+      "threshold": 0.96,
+      "total_cases": 118,
+      "predicted_hits": 19,
+      "valid_hits": 10,
+      "false_hits": 9,
+      "verification_rejections": 3,
+      "hit_rate": 0.16101694915254236,
+      "hit_precision": 0.5263157894736842,
+      "false_hit_rate": 0.47368421052631576,
+      "valid_reuse_recall": 0.37037037037037035,
+      "f1": 0.43478260869565216,
+      "false_hits_by_category": {
+        "mutating_request": 4,
+        "changed_content": 1,
+        "reversed_direction": 1,
+        "changed_ordering": 1,
+        "personalized_exact_repeat": 2
+      }
+    },
+    {
+      "threshold": 0.98,
+      "total_cases": 118,
+      "predicted_hits": 16,
+      "valid_hits": 7,
+      "false_hits": 9,
+      "verification_rejections": 2,
+      "hit_rate": 0.13559322033898305,
+      "hit_precision": 0.4375,
+      "false_hit_rate": 0.5625,
+      "valid_reuse_recall": 0.25925925925925924,
+      "f1": 0.3255813953488372,
+      "false_hits_by_category": {
+        "mutating_request": 4,
+        "changed_content": 1,
+        "reversed_direction": 1,
+        "changed_ordering": 1,
+        "personalized_exact_repeat": 2
+      }
+    },
+    {
+      "threshold": 1.0,
+      "total_cases": 118,
+      "predicted_hits": 12,
+      "valid_hits": 6,
+      "false_hits": 6,
+      "verification_rejections": 0,
+      "hit_rate": 0.1016949152542373,
+      "hit_precision": 0.5,
+      "false_hit_rate": 0.5,
+      "valid_reuse_recall": 0.2222222222222222,
+      "f1": 0.30769230769230765,
+      "false_hits_by_category": {
+        "mutating_request": 4,
+        "personalized_exact_repeat": 2
+      }
+    }
+  ]
+}

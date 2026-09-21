@@ -1,0 +1,136 @@
+{
+  "SYNTHETIC": "Provider latency and embedder are simulated with configured sleeps; not a measurement of any real API.",
+  "config": {
+    "requests": 3000,
+    "distinct": 200,
+    "unique_fraction": 0.05,
+    "zipf": 1.1,
+    "provider_latency_ms": 800.0,
+    "provider_jitter": 0.2,
+    "embed_latency_ms": 60.0,
+    "seed": 42,
+    "threadpool_size": null,
+    "unique_prompts": 322
+  },
+  "server_note": "FastAPI sync endpoint => AnyIO threadpool (default 40 threads); blocking misses occupy a thread each.",
+  "runs": [
+    {
+      "workers": 20,
+      "baseline": {
+        "requests": 3000,
+        "http_errors": 0,
+        "throughput_rps": 24.776918868793683,
+        "wall_seconds": 121.0804303750001,
+        "status_counts": {
+          "DIRECT": 3000
+        },
+        "latency_ms": {
+          "average_ms": 804.327128986002,
+          "p50_ms": 806.0557499993593,
+          "p95_ms": 950.1085829997464,
+          "p99_ms": 961.878125000112
+        },
+        "latency_ms_by_status": {
+          "DIRECT": {
+            "average_ms": 804.327128986002,
+            "p50_ms": 806.0557499993593,
+            "p95_ms": 950.1085829997464,
+            "p99_ms": 961.878125000112
+          }
+        }
+      },
+      "cached": {
+        "requests": 3000,
+        "http_errors": 0,
+        "throughput_rps": 180.90767122835905,
+        "wall_seconds": 16.58304470799976,
+        "status_counts": {
+          "MISS": 363,
+          "HIT": 2637
+        },
+        "latency_ms": {
+          "average_ms": 107.57190630400328,
+          "p50_ms": 1.202874999762571,
+          "p95_ms": 905.4964169990853,
+          "p99_ms": 1015.4144170001018
+        },
+        "latency_ms_by_status": {
+          "MISS": {
+            "average_ms": 878.3663924490105,
+            "p50_ms": 882.3133330006385,
+            "p95_ms": 1024.2745830000786,
+            "p99_ms": 1036.9468750004671
+          },
+          "HIT": {
+            "average_ms": 1.467090805088748,
+            "p50_ms": 1.1385420002625324,
+            "p95_ms": 2.7448330001789145,
+            "p99_ms": 4.068833000019367
+          }
+        },
+        "provider_calls": 363,
+        "provider_calls_avoided_pct": 87.9,
+        "redundant_provider_calls": 41
+      }
+    },
+    {
+      "workers": 50,
+      "baseline": {
+        "requests": 3000,
+        "http_errors": 0,
+        "throughput_rps": 61.54795744140153,
+        "wall_seconds": 48.74247862500124,
+        "status_counts": {
+          "DIRECT": 3000
+        },
+        "latency_ms": {
+          "average_ms": 804.9224755893308,
+          "p50_ms": 805.6387919987174,
+          "p95_ms": 949.3060410004546,
+          "p99_ms": 960.9671250000247
+        },
+        "latency_ms_by_status": {
+          "DIRECT": {
+            "average_ms": 804.9224755893308,
+            "p50_ms": 805.6387919987174,
+            "p95_ms": 949.3060410004546,
+            "p99_ms": 960.9671250000247
+          }
+        }
+      },
+      "cached": {
+        "requests": 3000,
+        "http_errors": 0,
+        "throughput_rps": 278.703392388164,
+        "wall_seconds": 10.764131624999209,
+        "status_counts": {
+          "MISS": 396,
+          "HIT": 2604
+        },
+        "latency_ms": {
+          "average_ms": 168.75685096634456,
+          "p50_ms": 36.708625000756,
+          "p95_ms": 957.0417080012703,
+          "p99_ms": 1083.184416000222
+        },
+        "latency_ms_by_status": {
+          "MISS": {
+            "average_ms": 927.5974650581013,
+            "p50_ms": 914.5102919992496,
+            "p95_ms": 1158.7448339996627,
+            "p99_ms": 1533.9100830005918
+          },
+          "HIT": {
+            "average_ms": 53.357126242713335,
+            "p50_ms": 27.631790999294026,
+            "p95_ms": 178.95429199961654,
+            "p99_ms": 325.4037080005219
+          }
+        },
+        "provider_calls": 396,
+        "provider_calls_avoided_pct": 86.8,
+        "redundant_provider_calls": 74
+      }
+    }
+  ]
+}

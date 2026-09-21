@@ -1,0 +1,1182 @@
+[
+  {
+    "case_id": "exact-1",
+    "category": "exact_repeat",
+    "cached_query": "What is the capital of France?",
+    "incoming_query": "What is the capital of France?",
+    "reuse_is_acceptable": true,
+    "rationale": "The request and execution context are identical.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "paraphrase-1",
+    "category": "safe_paraphrase",
+    "cached_query": "What is the capital of France?",
+    "incoming_query": "Name France's capital city.",
+    "reuse_is_acceptable": true,
+    "rationale": "Both requests seek the same stable fact.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "entity-1",
+    "category": "changed_entity",
+    "cached_query": "What is the capital of France?",
+    "incoming_query": "What is the capital of Germany?",
+    "reuse_is_acceptable": false,
+    "rationale": "The country changed, so the answer must change.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "number-1",
+    "category": "changed_number",
+    "cached_query": "Summarize this article in 3 bullets.",
+    "incoming_query": "Summarize this article in 8 bullets.",
+    "reuse_is_acceptable": false,
+    "rationale": "The requested response length changed.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "constraint-1",
+    "category": "changed_constraint",
+    "cached_query": "Recommend a vegetarian restaurant in Toronto.",
+    "incoming_query": "Recommend a vegan restaurant in Toronto.",
+    "reuse_is_acceptable": false,
+    "rationale": "Vegan is a stricter dietary constraint than vegetarian.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "temporal-1",
+    "category": "temporal_change",
+    "cached_query": "What was the weather in Toronto yesterday?",
+    "incoming_query": "What is the weather in Toronto today?",
+    "reuse_is_acceptable": false,
+    "rationale": "The temporal reference changed.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "negation-1",
+    "category": "negation",
+    "cached_query": "List foods that contain gluten.",
+    "incoming_query": "List foods that do not contain gluten.",
+    "reuse_is_acceptable": false,
+    "rationale": "Negation reverses the required answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "intent-1",
+    "category": "related_different_intent",
+    "cached_query": "How do I reset my account password?",
+    "incoming_query": "How do I change the email address on my account?",
+    "reuse_is_acceptable": false,
+    "rationale": "Both concern account settings but require different procedures.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "format-1",
+    "category": "changed_output_format",
+    "cached_query": "What is the capital of France?",
+    "incoming_query": "Return France's capital as JSON with a city field.",
+    "reuse_is_acceptable": false,
+    "rationale": "The requested output format changed even though the fact is the same.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "language-1",
+    "category": "changed_output_language",
+    "cached_query": "Explain photosynthesis in English.",
+    "incoming_query": "Explain photosynthesis in French.",
+    "reuse_is_acceptable": false,
+    "rationale": "The required response language changed.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "code-1",
+    "category": "changed_programming_language",
+    "cached_query": "Write a function that sorts a list in Python.",
+    "incoming_query": "Write a function that sorts a list in JavaScript.",
+    "reuse_is_acceptable": false,
+    "rationale": "The answer must use a different programming language.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "math-1",
+    "category": "answer_determining_identifier",
+    "cached_query": "Solve x + 2 = 8.",
+    "incoming_query": "Solve a + 2 = 8.",
+    "reuse_is_acceptable": false,
+    "rationale": "The numerical result is the same but the answer must name a different variable.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "direction-1",
+    "category": "reversed_direction",
+    "cached_query": "Give directions from Toronto to Ottawa.",
+    "incoming_query": "Give directions from Ottawa to Toronto.",
+    "reuse_is_acceptable": false,
+    "rationale": "The origin and destination were reversed.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "creative-1",
+    "category": "creative_generation",
+    "cached_query": "Write a birthday poem for Maya.",
+    "incoming_query": "Write a birthday poem for Jordan.",
+    "reuse_is_acceptable": false,
+    "rationale": "The named recipient is answer-determining in a personalized creative response.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "personalization-1",
+    "category": "personalized_context",
+    "cached_query": "Suggest a weekly meal plan for a person allergic to peanuts.",
+    "incoming_query": "Suggest a weekly meal plan for a person allergic to shellfish.",
+    "reuse_is_acceptable": false,
+    "rationale": "The user-specific safety constraint changed.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "mutation-1",
+    "category": "mutating_request",
+    "cached_query": "Send a password reset email to alex@example.com.",
+    "incoming_query": "Send a password reset email to alex@example.com.",
+    "reuse_is_acceptable": false,
+    "rationale": "Mutating actions should be non-cacheable even when the text repeats.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-policy-1",
+    "category": "changed_constraint",
+    "cached_query": "What is the return window for unopened items?",
+    "incoming_query": "How long do I have to return an unused product?",
+    "reuse_is_acceptable": false,
+    "rationale": "'Unopened' and 'unused' are different conditions (an item can be opened but unused), and return policies often treat them differently, so the cached answer is not safely reusable.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "scope-1",
+    "category": "changed_scope",
+    "cached_query": "List the benefits of exercise for adults.",
+    "incoming_query": "List the benefits of exercise for older adults with arthritis.",
+    "reuse_is_acceptable": false,
+    "rationale": "The target population and health constraint change the appropriate answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "ordering-1",
+    "category": "changed_ordering",
+    "cached_query": "Rank these cities from lowest to highest cost of living: Toronto, Ottawa, Montreal.",
+    "incoming_query": "Rank these cities from highest to lowest cost of living: Toronto, Ottawa, Montreal.",
+    "reuse_is_acceptable": false,
+    "rationale": "The requested ordering is reversed.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "exact-repeat-02",
+    "category": "exact_repeat",
+    "cached_query": "What is the boiling point of water at sea level?",
+    "incoming_query": "What is the boiling point of water at sea level?",
+    "reuse_is_acceptable": true,
+    "rationale": "Identical stable factual question.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "exact-repeat-03",
+    "category": "exact_repeat",
+    "cached_query": "How do I create a virtual environment in Python?",
+    "incoming_query": "How do I create a virtual environment in Python?",
+    "reuse_is_acceptable": true,
+    "rationale": "Identical stable how-to question.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "exact-repeat-04",
+    "category": "exact_repeat",
+    "cached_query": "Convert 100 kilometers to miles.",
+    "incoming_query": "Convert 100 kilometers to miles.",
+    "reuse_is_acceptable": true,
+    "rationale": "Identical deterministic conversion.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "exact-repeat-05",
+    "category": "exact_repeat",
+    "cached_query": "Explain the difference between TCP and UDP.",
+    "incoming_query": "Explain the difference between TCP and UDP.",
+    "reuse_is_acceptable": true,
+    "rationale": "Identical stable explanatory question.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "exact-repeat-06",
+    "category": "exact_repeat",
+    "cached_query": "What is the capital of Japan?",
+    "incoming_query": "What is the capital of Japan?",
+    "reuse_is_acceptable": true,
+    "rationale": "Identical stable factual question.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "exact-repeat-07",
+    "category": "exact_repeat",
+    "cached_query": "Translate 'good morning' into Spanish.",
+    "incoming_query": "Translate 'good morning' into Spanish.",
+    "reuse_is_acceptable": true,
+    "rationale": "Identical deterministic translation.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-03",
+    "category": "safe_paraphrase",
+    "cached_query": "What is the boiling point of water at sea level?",
+    "incoming_query": "At sea level, at what temperature does water boil?",
+    "reuse_is_acceptable": true,
+    "rationale": "Same question, same answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-04",
+    "category": "safe_paraphrase",
+    "cached_query": "How do I create a virtual environment in Python?",
+    "incoming_query": "What's the way to set up a Python virtual environment?",
+    "reuse_is_acceptable": true,
+    "rationale": "Same how-to; the answer is the same procedure.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-05",
+    "category": "safe_paraphrase",
+    "cached_query": "What is the capital of Japan?",
+    "incoming_query": "Which city is Japan's capital?",
+    "reuse_is_acceptable": true,
+    "rationale": "Same question, same answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-06",
+    "category": "safe_paraphrase",
+    "cached_query": "Who wrote Pride and Prejudice?",
+    "incoming_query": "Who is the author of Pride and Prejudice?",
+    "reuse_is_acceptable": true,
+    "rationale": "Same question, same answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-07",
+    "category": "safe_paraphrase",
+    "cached_query": "How many days are in a leap year?",
+    "incoming_query": "How many days does a leap year have?",
+    "reuse_is_acceptable": true,
+    "rationale": "Same question, same answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-08",
+    "category": "safe_paraphrase",
+    "cached_query": "What does HTTP stand for?",
+    "incoming_query": "What is HTTP an abbreviation of?",
+    "reuse_is_acceptable": true,
+    "rationale": "Same question, same answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-09",
+    "category": "safe_paraphrase",
+    "cached_query": "What is the chemical symbol for gold?",
+    "incoming_query": "Which chemical symbol represents gold?",
+    "reuse_is_acceptable": true,
+    "rationale": "Same question, same answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-10",
+    "category": "safe_paraphrase",
+    "cached_query": "What is the speed of light in a vacuum?",
+    "incoming_query": "How fast does light travel in a vacuum?",
+    "reuse_is_acceptable": true,
+    "rationale": "Same question, same answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-11",
+    "category": "safe_paraphrase",
+    "cached_query": "Who painted the Mona Lisa?",
+    "incoming_query": "Which artist painted the Mona Lisa?",
+    "reuse_is_acceptable": true,
+    "rationale": "Same question, same answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-12",
+    "category": "safe_paraphrase",
+    "cached_query": "How many ounces are in a pound?",
+    "incoming_query": "How many ounces make up one pound?",
+    "reuse_is_acceptable": true,
+    "rationale": "Same question, same answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-13",
+    "category": "safe_paraphrase",
+    "cached_query": "What is the time complexity of binary search?",
+    "incoming_query": "What's binary search's time complexity?",
+    "reuse_is_acceptable": true,
+    "rationale": "Same question, same answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-14",
+    "category": "safe_paraphrase",
+    "cached_query": "What year did World War II end?",
+    "incoming_query": "In which year did the Second World War end?",
+    "reuse_is_acceptable": true,
+    "rationale": "Same question, same answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-15",
+    "category": "safe_paraphrase",
+    "cached_query": "What is photosynthesis?",
+    "incoming_query": "Can you explain what photosynthesis is?",
+    "reuse_is_acceptable": true,
+    "rationale": "Same intent; an explanation of the same concept.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-16",
+    "category": "safe_paraphrase",
+    "cached_query": "Define machine learning in one sentence.",
+    "incoming_query": "In a single sentence, what is machine learning?",
+    "reuse_is_acceptable": true,
+    "rationale": "Same intent and same length constraint.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-17",
+    "category": "safe_paraphrase",
+    "cached_query": "How do I undo my last git commit?",
+    "incoming_query": "What is the way to undo my most recent git commit?",
+    "reuse_is_acceptable": true,
+    "rationale": "Borderline: same intent; the answer may list soft/hard reset variants either way.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "safe-paraphrase-18",
+    "category": "related_different_intent",
+    "cached_query": "What are the symptoms of dehydration?",
+    "incoming_query": "How can I tell if I am dehydrated?",
+    "reuse_is_acceptable": false,
+    "rationale": "A symptom list answers the first question, but the second asks how to assess oneself, which can call for self-tests (skin pinch, urine colour) and when to seek care. Relabelled as not reusable after a manual spot-check.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "surface-variation-01",
+    "category": "surface_variation",
+    "cached_query": "What is the capital of Japan?",
+    "incoming_query": "what is the capital of japan",
+    "reuse_is_acceptable": true,
+    "rationale": "Casing and punctuation only.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "surface-variation-02",
+    "category": "surface_variation",
+    "cached_query": "What is the capital of Japan?",
+    "incoming_query": "What is teh capital of Japan?",
+    "reuse_is_acceptable": true,
+    "rationale": "A typo; same question.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "surface-variation-03",
+    "category": "surface_variation",
+    "cached_query": "What is the capital of Japan?",
+    "incoming_query": "Please tell me the capital of Japan.",
+    "reuse_is_acceptable": true,
+    "rationale": "Politeness wrapper only.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "surface-variation-04",
+    "category": "surface_variation",
+    "cached_query": "How do I create a virtual environment in Python?",
+    "incoming_query": "  How do I create a virtual environment in Python ?  ",
+    "reuse_is_acceptable": true,
+    "rationale": "Whitespace only.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-entity-02",
+    "category": "changed_entity",
+    "cached_query": "What is the capital of Japan?",
+    "incoming_query": "What is the capital of China?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different country, different answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-entity-03",
+    "category": "changed_entity",
+    "cached_query": "Who wrote Pride and Prejudice?",
+    "incoming_query": "Who wrote Hamlet?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different book, different author.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-entity-04",
+    "category": "changed_entity",
+    "cached_query": "What is the chemical symbol for gold?",
+    "incoming_query": "What is the chemical symbol for silver?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different element.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-entity-05",
+    "category": "changed_entity",
+    "cached_query": "Who painted the Mona Lisa?",
+    "incoming_query": "Who painted The Starry Night?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different painting, different artist.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-entity-06",
+    "category": "changed_entity",
+    "cached_query": "What is the population of Canada?",
+    "incoming_query": "What is the population of Australia?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different country.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-entity-07",
+    "category": "changed_entity",
+    "cached_query": "Who founded Microsoft?",
+    "incoming_query": "Who founded Amazon?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different company.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-entity-08",
+    "category": "changed_entity",
+    "cached_query": "How do I install Docker on Ubuntu?",
+    "incoming_query": "How do I install Docker on macOS?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different operating system, different steps.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-entity-09",
+    "category": "changed_entity",
+    "cached_query": "What is the tallest mountain in Africa?",
+    "incoming_query": "What is the tallest mountain in Asia?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different continent.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-entity-10",
+    "category": "changed_entity",
+    "cached_query": "What are the side effects of ibuprofen?",
+    "incoming_query": "What are the side effects of acetaminophen?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different drug; a wrong reuse is a safety issue.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-entity-11",
+    "category": "changed_entity",
+    "cached_query": "What is the time complexity of binary search?",
+    "incoming_query": "What is the time complexity of quicksort?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different algorithm.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-number-02",
+    "category": "changed_number",
+    "cached_query": "Give me 5 tips for public speaking.",
+    "incoming_query": "Give me 10 tips for public speaking.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different requested count.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-number-03",
+    "category": "changed_number",
+    "cached_query": "What is 15% of 200?",
+    "incoming_query": "What is 25% of 200?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different arithmetic result.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-number-04",
+    "category": "changed_number",
+    "cached_query": "Convert 100 kilometers to miles.",
+    "incoming_query": "Convert 10 kilometers to miles.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different quantity.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-number-05",
+    "category": "changed_number",
+    "cached_query": "Write a 500-word essay on climate change.",
+    "incoming_query": "Write a 100-word essay on climate change.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different length requirement.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-number-06",
+    "category": "changed_number",
+    "cached_query": "What was the population of Toronto in 2010?",
+    "incoming_query": "What was the population of Toronto in 2020?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different year, different value.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-number-07",
+    "category": "changed_number",
+    "cached_query": "Who won the 2018 FIFA World Cup?",
+    "incoming_query": "Who won the 2014 FIFA World Cup?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different year, different winner.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-number-08",
+    "category": "changed_number",
+    "cached_query": "What is 12 times 12?",
+    "incoming_query": "What is 12 times 13?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different arithmetic result.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-number-09",
+    "category": "changed_number",
+    "cached_query": "Plan a 3-day trip to Rome.",
+    "incoming_query": "Plan a 7-day trip to Rome.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different trip length.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-number-10",
+    "category": "changed_number",
+    "cached_query": "Explain how to run a 5K in under 30 minutes.",
+    "incoming_query": "Explain how to run a 5K in under 20 minutes.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different target time changes the plan.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-number-11",
+    "category": "changed_number",
+    "cached_query": "What is the interest on $1,000 at 5% for 2 years?",
+    "incoming_query": "What is the interest on $1,000 at 6% for 2 years?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different rate, different result.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-number-12",
+    "category": "changed_number",
+    "cached_query": "Is 17 a prime number?",
+    "incoming_query": "Is 18 a prime number?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different number, different answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-number-13",
+    "category": "changed_number",
+    "cached_query": "Translate 'good morning' into Spanish.",
+    "incoming_query": "Translate 'good night' into Spanish.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different phrase, different translation.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-constraint-02",
+    "category": "changed_constraint",
+    "cached_query": "Suggest a gluten-free dinner recipe.",
+    "incoming_query": "Suggest a dairy-free dinner recipe.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different dietary constraint; a wrong reuse can be unsafe.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-constraint-03",
+    "category": "changed_constraint",
+    "cached_query": "Write a Python function to reverse a string.",
+    "incoming_query": "Write a Python function to reverse a string without using slicing.",
+    "reuse_is_acceptable": false,
+    "rationale": "Added restriction changes the implementation.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-constraint-04",
+    "category": "changed_constraint",
+    "cached_query": "Recommend a laptop under $1000.",
+    "incoming_query": "Recommend a laptop under $500.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different budget.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-constraint-05",
+    "category": "changed_constraint",
+    "cached_query": "Explain recursion to a beginner.",
+    "incoming_query": "Explain recursion to an expert.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different audience level.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-constraint-06",
+    "category": "changed_constraint",
+    "cached_query": "Summarize the plot of Hamlet in one paragraph.",
+    "incoming_query": "Summarize the plot of Hamlet in two sentences.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different length constraint.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-constraint-07",
+    "category": "changed_constraint",
+    "cached_query": "Write a formal email declining a meeting.",
+    "incoming_query": "Write a casual email declining a meeting.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different tone.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-constraint-08",
+    "category": "changed_constraint",
+    "cached_query": "List budget hotels in Paris.",
+    "incoming_query": "List luxury hotels in Paris.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different price tier.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "temporal-change-02",
+    "category": "temporal_change",
+    "cached_query": "Who is the current UK prime minister?",
+    "incoming_query": "Who was the UK prime minister in 1990?",
+    "reuse_is_acceptable": false,
+    "rationale": "Present vs. historical.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "temporal-change-03",
+    "category": "temporal_change",
+    "cached_query": "What is the price of Bitcoin right now?",
+    "incoming_query": "What was the price of Bitcoin on January 1, 2020?",
+    "reuse_is_acceptable": false,
+    "rationale": "Live value vs. historical value.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "temporal-change-04",
+    "category": "temporal_change",
+    "cached_query": "What is today's date?",
+    "incoming_query": "What was yesterday's date?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different day.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "temporal-change-05",
+    "category": "temporal_change",
+    "cached_query": "What are the latest features in Python?",
+    "incoming_query": "What features were introduced in Python 3.6?",
+    "reuse_is_acceptable": false,
+    "rationale": "Latest vs. a specific old release.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "temporal-change-06",
+    "category": "temporal_change",
+    "cached_query": "What is the USD to EUR exchange rate today?",
+    "incoming_query": "What was the USD to EUR exchange rate a year ago?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different date.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "temporal-change-07",
+    "category": "temporal_change",
+    "cached_query": "Who won the most recent Super Bowl?",
+    "incoming_query": "Who won the first Super Bowl?",
+    "reuse_is_acceptable": false,
+    "rationale": "Recent vs. first.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "negation-02",
+    "category": "negation",
+    "cached_query": "Explain when to use a mutable default argument in Python.",
+    "incoming_query": "Explain when not to use a mutable default argument in Python.",
+    "reuse_is_acceptable": false,
+    "rationale": "Negated scope inverts the answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "negation-03",
+    "category": "negation",
+    "cached_query": "List countries that are members of NATO.",
+    "incoming_query": "List countries that are not members of NATO.",
+    "reuse_is_acceptable": false,
+    "rationale": "Complement set.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "negation-04",
+    "category": "negation",
+    "cached_query": "Write a sentence that includes the word 'blue'.",
+    "incoming_query": "Write a sentence that does not include the word 'blue'.",
+    "reuse_is_acceptable": false,
+    "rationale": "Opposite constraint.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "negation-05",
+    "category": "negation",
+    "cached_query": "Show me users who have logged in this week.",
+    "incoming_query": "Show me users who have not logged in this week.",
+    "reuse_is_acceptable": false,
+    "rationale": "Complement set.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "negation-06",
+    "category": "negation",
+    "cached_query": "Recommend books that are suitable for children.",
+    "incoming_query": "Recommend books that are not suitable for children.",
+    "reuse_is_acceptable": false,
+    "rationale": "Opposite intent.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "negation-07",
+    "category": "negation",
+    "cached_query": "What should I do if my dog eats chocolate?",
+    "incoming_query": "What should I not do if my dog eats chocolate?",
+    "reuse_is_acceptable": false,
+    "rationale": "Opposite framing.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "related-different-intent-02",
+    "category": "related_different_intent",
+    "cached_query": "How do I cancel my subscription?",
+    "incoming_query": "How do I pause my subscription?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different action.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "related-different-intent-03",
+    "category": "related_different_intent",
+    "cached_query": "How do I delete my account?",
+    "incoming_query": "How do I deactivate my account?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different, irreversible vs. reversible action.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "related-different-intent-04",
+    "category": "related_different_intent",
+    "cached_query": "How do I install Python?",
+    "incoming_query": "How do I uninstall Python?",
+    "reuse_is_acceptable": false,
+    "rationale": "Opposite action.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "related-different-intent-05",
+    "category": "related_different_intent",
+    "cached_query": "What is the difference between a list and a tuple?",
+    "incoming_query": "How do I convert a list to a tuple?",
+    "reuse_is_acceptable": false,
+    "rationale": "Conceptual comparison vs. how-to.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "related-different-intent-06",
+    "category": "related_different_intent",
+    "cached_query": "How do I open a bank account?",
+    "incoming_query": "How do I close a bank account?",
+    "reuse_is_acceptable": false,
+    "rationale": "Opposite action.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "related-different-intent-07",
+    "category": "related_different_intent",
+    "cached_query": "What is Kubernetes?",
+    "incoming_query": "How do I install Kubernetes?",
+    "reuse_is_acceptable": false,
+    "rationale": "Concept vs. procedure.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "related-different-intent-08",
+    "category": "related_different_intent",
+    "cached_query": "How do I merge two branches in git?",
+    "incoming_query": "How do I delete a branch in git?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different git operation.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "related-different-intent-09",
+    "category": "related_different_intent",
+    "cached_query": "How do I learn Spanish quickly?",
+    "incoming_query": "How do I teach Spanish quickly?",
+    "reuse_is_acceptable": false,
+    "rationale": "Learner vs. teacher.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-output-format-02",
+    "category": "changed_output_format",
+    "cached_query": "List the planets in the solar system.",
+    "incoming_query": "List the planets in the solar system as a markdown table.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different output structure.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-output-format-03",
+    "category": "changed_output_format",
+    "cached_query": "Explain how HTTP caching works.",
+    "incoming_query": "Explain how HTTP caching works in exactly three bullet points.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different structure and length.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-output-format-04",
+    "category": "changed_output_format",
+    "cached_query": "What is the capital of Japan?",
+    "incoming_query": "Answer with a single word: what is the capital of Japan?",
+    "reuse_is_acceptable": false,
+    "rationale": "Format constraint; a sentence answer would violate it.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-output-format-05",
+    "category": "changed_output_format",
+    "cached_query": "Summarize the benefits of unit testing.",
+    "incoming_query": "Summarize the benefits of unit testing as a numbered list.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different structure.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-output-language-02",
+    "category": "changed_output_language",
+    "cached_query": "Explain what an API is.",
+    "incoming_query": "Explain what an API is, in Spanish.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different response language.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-output-language-03",
+    "category": "changed_output_language",
+    "cached_query": "Write a short greeting for a customer.",
+    "incoming_query": "Write a short greeting for a customer in German.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different response language.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-programming-language-02",
+    "category": "changed_programming_language",
+    "cached_query": "Show how to read a file line by line in Python.",
+    "incoming_query": "Show how to read a file line by line in Java.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different programming language.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-programming-language-03",
+    "category": "changed_programming_language",
+    "cached_query": "How do I make an HTTP GET request in Python?",
+    "incoming_query": "How do I make an HTTP GET request in Go?",
+    "reuse_is_acceptable": false,
+    "rationale": "Different programming language.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-programming-language-04",
+    "category": "changed_programming_language",
+    "cached_query": "Write a for loop that prints 1 to 10 in C.",
+    "incoming_query": "Write a for loop that prints 1 to 10 in Rust.",
+    "reuse_is_acceptable": false,
+    "rationale": "Different programming language.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-content-01",
+    "category": "changed_content",
+    "cached_query": "Fix the bug in this code: for i in range(10) print(i)",
+    "incoming_query": "Fix the bug in this code: for i in range(10): print(i",
+    "reuse_is_acceptable": false,
+    "rationale": "Different bug in the pasted code.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-content-02",
+    "category": "changed_content",
+    "cached_query": "Summarize this text: 'The cat sat on the mat.'",
+    "incoming_query": "Summarize this text: 'The dog sat on the mat.'",
+    "reuse_is_acceptable": false,
+    "rationale": "Answer depends on the supplied text.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "reversed-direction-02",
+    "category": "reversed_direction",
+    "cached_query": "Convert 100 Celsius to Fahrenheit.",
+    "incoming_query": "Convert 100 Fahrenheit to Celsius.",
+    "reuse_is_acceptable": false,
+    "rationale": "Reversed conversion direction.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "reversed-direction-03",
+    "category": "reversed_direction",
+    "cached_query": "Translate this from English to French: 'Where is the station?'",
+    "incoming_query": "Translate this from French to English: 'Where is the station?'",
+    "reuse_is_acceptable": false,
+    "rationale": "Reversed translation direction.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-ordering-02",
+    "category": "changed_ordering",
+    "cached_query": "Sort these numbers in ascending order: 5, 2, 9",
+    "incoming_query": "Sort these numbers in descending order: 5, 2, 9",
+    "reuse_is_acceptable": false,
+    "rationale": "Opposite order.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "creative-generation-02",
+    "category": "creative_generation",
+    "cached_query": "Write a birthday message for my mom.",
+    "incoming_query": "Write a birthday message for my dad.",
+    "reuse_is_acceptable": false,
+    "rationale": "Personalised output for a different recipient.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "personalized-context-02",
+    "category": "personalized_context",
+    "cached_query": "I am 25 years old. How much should I save for retirement each month?",
+    "incoming_query": "I am 55 years old. How much should I save for retirement each month?",
+    "reuse_is_acceptable": false,
+    "rationale": "Personal detail determines the advice.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "personalized-context-03",
+    "category": "personalized_context",
+    "cached_query": "My monthly income is $3,000. Suggest a budget.",
+    "incoming_query": "My monthly income is $8,000. Suggest a budget.",
+    "reuse_is_acceptable": false,
+    "rationale": "Personal figure determines the answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "personalized-exact-repeat-01",
+    "category": "personalized_exact_repeat",
+    "cached_query": "What is my account balance?",
+    "incoming_query": "What is my account balance?",
+    "reuse_is_acceptable": false,
+    "rationale": "Identical text, but it asks for current per-user state: the answer depends on who is asking and changes over time, so a cached answer is not acceptable even for an identical query. Needs user-scoped identity or bypass; text similarity cannot solve it.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "personalized-exact-repeat-02",
+    "category": "personalized_exact_repeat",
+    "cached_query": "What is the status of my order?",
+    "incoming_query": "What is the status of my order?",
+    "reuse_is_acceptable": false,
+    "rationale": "Identical text, per-user and time-varying data.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "mutating-request-02",
+    "category": "mutating_request",
+    "cached_query": "Delete the file report.txt from my drive.",
+    "incoming_query": "Delete the file report.txt from my drive.",
+    "reuse_is_acceptable": false,
+    "rationale": "Side-effecting request; serving a cached reply performs nothing.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "mutating-request-03",
+    "category": "mutating_request",
+    "cached_query": "Create a new support ticket for a broken monitor.",
+    "incoming_query": "Create a new support ticket for a broken monitor.",
+    "reuse_is_acceptable": false,
+    "rationale": "Side-effecting request.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "mutating-request-04",
+    "category": "mutating_request",
+    "cached_query": "Transfer $50 to Sam.",
+    "incoming_query": "Transfer $50 to Sam.",
+    "reuse_is_acceptable": false,
+    "rationale": "Side-effecting request; each is a separate action.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-scope-02",
+    "category": "changed_scope",
+    "cached_query": "List the side effects of caffeine.",
+    "incoming_query": "List the side effects of caffeine in pregnant women.",
+    "reuse_is_acceptable": false,
+    "rationale": "Narrower population, different answer.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  },
+  {
+    "case_id": "changed-scope-03",
+    "category": "changed_scope",
+    "cached_query": "Summarize the French Revolution.",
+    "incoming_query": "Summarize the causes of the French Revolution.",
+    "reuse_is_acceptable": false,
+    "rationale": "Narrower scope.",
+    "review_status": "ai_drafted_cross_checked_by_second_model_not_human_verified",
+    "label_source": "ai_authored_draft"
+  }
+]

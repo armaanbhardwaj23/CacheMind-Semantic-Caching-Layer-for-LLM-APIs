@@ -1,0 +1,38 @@
+{
+  "dimensions": 1536,
+  "queries_per_size": 100,
+  "machine": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.12.13",
+  "numpy": "2.5.3",
+  "note": "Random unit-scale vectors; measures brute-force cosine search only.",
+  "results": [
+    {
+      "entries": 1000,
+      "numpy_p50_ms": 0.0253954999607231,
+      "numpy_p95_ms": 0.031792000072528026,
+      "numpy_p99_ms": 0.539208999953189,
+      "pure_python_p50_ms": 56.12918750000517,
+      "speedup_at_p50": 2210.202106153258
+    },
+    {
+      "entries": 5000,
+      "numpy_p50_ms": 0.4067705000352362,
+      "numpy_p95_ms": 0.509583999928509,
+      "numpy_p99_ms": 0.6096669999351434,
+      "pure_python_p50_ms": 278.7761255000305,
+      "speedup_at_p50": 685.3400762245093
+    },
+    {
+      "entries": 10000,
+      "numpy_p50_ms": 0.7486040000230787,
+      "numpy_p95_ms": 0.7766249998439889,
+      "numpy_p99_ms": 0.8053750000271975
+    },
+    {
+      "entries": 25000,
+      "numpy_p50_ms": 1.8642499999259599,
+      "numpy_p95_ms": 2.0435410001482524,
+      "numpy_p99_ms": 2.1705000001475128
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "cap_usd": 0.2,
+  "total_usd": 0.04186483500000002,
+  "total_usd_including_placeholder": 0.04236513500000001,
+  "by_label_usd": {
+    "embeddings": 0.0007135950000000019,
+    "e2e-chat-direct": 0.03007560000000001,
+    "e2e-embeddings-proxy": 2.764e-05,
+    "e2e-chat-proxy": 0.011048,
+    "diagnostics": 0.0005003
+  },
+  "note": "Estimates at configured prices, not an invoice. 'diagnostics' is a flat placeholder for six probe calls the provider rejected (HTTP 402); it is excluded from total_usd. See cost-crosscheck.json for a comparison with the provider's own counter."
+}

@@ -1,0 +1,17 @@
+{
+  "what_this_is": "Manual readings of OpenRouter's own usage counter (GET /api/v1/key) compared with this repo's spend ledger. Not produced by a script run at the time; the two earlier readings were copied from the session log.",
+  "key_is_shared_with_another_project": true,
+  "readings_usd": {
+    "usage_daily_before_rerun_2026-09-19": 0.01772428,
+    "lifetime_usage_before_rerun": 0.20111186,
+    "lifetime_usage_after_rerun_and_probes": 0.22529916
+  },
+  "provider_counter_total_for_this_repo_usd": 0.04191158,
+  "provider_counter_total_derivation": "0.01772428 (daily usage before the rerun, equal to the ledger then to $0.00003) + (0.22529916 - 0.20111186) = 0.04191158",
+  "ledger_total_excluding_placeholder_usd": 0.04186,
+  "ledger_total_including_placeholder_usd": 0.04237,
+  "caveats": [
+    "The key is shared with another project, so the counter delta could include that project's spend; agreement with the ledger suggests it did not.",
+    "The ledger's 'diagnostics' label holds a flat $0.0005 placeholder for six probe calls that OpenRouter rejected with HTTP 402; rejected calls were most likely not billed."
+  ]
+}
