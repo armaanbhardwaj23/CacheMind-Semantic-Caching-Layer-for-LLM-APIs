@@ -2,6 +2,7 @@
 name = "cachemind"
 version = "0.1.0"
 description = "A provider-agnostic semantic cache for OpenAI-compatible LLM APIs, with measured latency, cost and correctness."
+readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
 requires-python = ">=3.11,<3.13"
