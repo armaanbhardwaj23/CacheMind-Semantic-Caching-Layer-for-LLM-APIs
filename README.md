@@ -283,7 +283,7 @@ that refuses a call that could exceed the cap.
 - A failed upstream call returns HTTP 502 and is **not counted** in `/metrics`; provider errors are invisible to the hit/miss counters.
 - Streaming is covered by unit tests with fake providers; it was not exercised against the live API in these benchmarks.
 - Only Python 3.12 has been exercised (`requires-python` is `>=3.11,<3.13`).
-- The GitHub Actions workflow has never run (nothing has been pushed). Dependency lower bounds in `pyproject.toml` were not tested against older releases, apart from a
+- CI runs only on Ubuntu with Python 3.12 (first run 2026-09-21: 150 passed, 1 skipped; the skip is the live Redis test, so CI does not exercise Redis either). Dependency lower bounds in `pyproject.toml` were not tested against older releases, apart from a
   tightened `redisvl>=0.27` (0.27.2 is the version exercised). Redis's documentation does not say whether an expired key can still appear in a search briefly, so the store re-checks
   the stored expiry itself; that logic is tested only against a fake index.
 - The PAWS and QQP pair files are generated, not distributed: they are rebuilt locally from public samples by the commands below (Quora's licence for QQP is unclear, and the PAWS
@@ -303,7 +303,7 @@ Planned, in rough priority order. None of it is done, and nothing above depends 
 3. **Human review of the curated labels** (they have had one independent AI cross-check and a spot-check of 17 pairs, no full human review) and, ideally, a labelled set of real traffic instead of proxy labels.
 4. **Single-flight de-duplication and an async provider client** for the concurrency limits in "What Didn't Work" #6.
 5. **Per-user identity and client authentication**, before any shared or multi-tenant deployment.
-6. **Run the CI workflow** so it can be called verified, and add a container image if a deployable artifact is needed.
+6. **Add a container image** if a deployable artifact is needed, and a CI job with a Redis 8 service so the live test runs there.
 
 ## Configuration and operations
 
